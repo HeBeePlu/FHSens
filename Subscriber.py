@@ -17,3 +17,11 @@ client.connect(broker_adress)
 
 #Topic "topic" wird abonniert mit einem Quality of Service qos
 client.subscribe("topic", 0)
+
+def on_message(client, userdata, msg):
+    print(msg.topic + " " + str(msg.payload))
+    
+    
+client.on_message = on_message
+
+client.loop_forever()
