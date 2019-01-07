@@ -16,4 +16,4 @@ client = mqtt.Client("Subscriber_1")
 client.connect(broker_adress)
 
 #Topic "topic" wird abonniert
-client.subscribe("topic")
+client.subscribe("topic", qos=0)
