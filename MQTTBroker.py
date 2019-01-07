@@ -1,8 +1,6 @@
-#Hendrik Beecken
-#07.01.2019
+# Hendrik Beecken
+# 07.01.2019
+#
+# MQTT Broker zur Kommunikation der Sensordaten
 
-a = 1
-b = 4
 
-print ("hello")
-print (a+b)
