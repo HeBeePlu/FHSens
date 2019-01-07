@@ -14,4 +14,4 @@ client = mqtt.Client("Publisher_1")
 client.connect(broker_adress)
 
 #publish Data
-client.publish("fun/topic","Py Script Hallo")
+client.publish("lol","Py Script Hallo")
