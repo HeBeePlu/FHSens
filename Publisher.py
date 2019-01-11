@@ -8,7 +8,7 @@ import paho.mqtt.client as mqtt
 
 broker_adress = "192.168.178.45"
 
-client = mqtt.Client("Publisher_0")
+client = mqtt.Client() #mqtt.Client("Client_Name") optional aber Name darf nur ein mal vergeben werden
 
 #client.connect("localhost", 1883, 60)
 client.connect(broker_adress)
