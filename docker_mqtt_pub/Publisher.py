@@ -8,7 +8,7 @@ import paho.mqtt.client as mqtt
 
 broker_adress = "192.168.178.45"
 
-client = mqtt.Client("Publisher_0")
+client = mqtt.Client("Publisher_1")
 
 #client.connect("localhost", 1883, 60)
 client.connect(broker_adress)
@@ -18,7 +18,7 @@ client.loop_start()
 
 #publish Data zum Topic 'topic'
 while True:
-    client.publish("topic","Py Script Hallo")
+    client.publish("topic","Hallo von Docker")
     time.sleep(2)
 
 
