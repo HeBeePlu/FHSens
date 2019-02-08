@@ -18,10 +18,8 @@ client.loop_start()
 
 
 #publish Data zum Topic 'topic'
-def dauerschleife(string):
-    while True:
-        client.publish("topic",string)
-        time.sleep(1)
+def publish(string):
+    client.publish("topic", string)
 
 
 def koordinaten_eingabe():
@@ -39,6 +37,8 @@ def create_string(eingabeliste):
     return 'X: ' + eingabeliste[0] + ' Y: ' + eingabeliste[1] + ' Z: ' + eingabeliste[2]
 
 if __name__=='__main__':
-    dauerschleife(create_string(koordinaten_eingabe()))
-    #koordinaten_eingabe()
-
+    
+    while True:
+        publish(create_string(koordinaten_eingabe()))
+        #publish('Hallo LOL')
+        time.sleep(0.75)
