@@ -4,6 +4,7 @@
 # MQTT Publisher zur Kommunikation der Sensordaten
 
 import time
+import numpy
 import paho.mqtt.client as mqtt
 
 broker_adress = "192.168.178.45"
@@ -21,8 +22,18 @@ def dauerschleife():
     while True:
         client.publish("topic","Py Script Hallo")
         time.sleep(1)
+        
+def koordinaten_eingabe():
+    koordinatenliste = numpy.empty(3, dtype=float)
+    
+    koordinatenliste [0] = input("X-Koordinate: ")
+    koordinatenliste [1] = input("Y-Koordinate: ")
+    koordinatenliste [2] = input("Z-Koordinate: ")
+    
+    return koordinatenliste
+
 
 if __name__=='__main__':
     dauerschleife()
-
+    
 
