@@ -18,11 +18,12 @@ client.loop_start()
 
 
 #publish Data zum Topic 'topic'
-def dauerschleife():
+def dauerschleife(string):
     while True:
-        client.publish("topic","Py Script Hallo")
+        client.publish("topic",string)
         time.sleep(1)
-        
+
+
 def koordinaten_eingabe():
     koordinatenliste = numpy.empty(3, dtype=float)
     
@@ -32,8 +33,12 @@ def koordinaten_eingabe():
     
     return koordinatenliste
 
+def create_string(eingabeliste):
+    eingabeliste = list(map(lambda x: str(x), eingabeliste))
+    
+    return 'X: ' + eingabeliste[0] + ' Y: ' + eingabeliste[1] + ' Z: ' + eingabeliste[2]
 
 if __name__=='__main__':
-    dauerschleife()
-    
+    dauerschleife(create_string(koordinaten_eingabe()))
+    #koordinaten_eingabe()
 
