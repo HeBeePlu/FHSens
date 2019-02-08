@@ -38,9 +38,12 @@ def create_string(eingabeliste):
     
     return 'X: ' + eingabeliste[0] + ' Y: ' + eingabeliste[1] + ' Z: ' + eingabeliste[2]
 
-if __name__=='__main__':
-    
+def main():
     while True:
         publish(create_string(koordinaten_eingabe())) # fordert immer neue eingaben
         #publish('Hallo LOL') #loopt immer den selben string
         time.sleep(0.75)
+
+if __name__=='__main__':
+    main()
+    
