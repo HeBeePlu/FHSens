@@ -23,6 +23,7 @@ def publish(string):
 
 
 def koordinaten_eingabe():
+    #erzeugt leere liste mit fester länge
     koordinatenliste = numpy.empty(3, dtype=float)
     
     koordinatenliste [0] = input("X-Koordinate: ")
@@ -32,6 +33,7 @@ def koordinaten_eingabe():
     return koordinatenliste
 
 def create_string(eingabeliste):
+    #umwandeln in string elemente
     eingabeliste = list(map(lambda x: str(x), eingabeliste))
     
     return 'X: ' + eingabeliste[0] + ' Y: ' + eingabeliste[1] + ' Z: ' + eingabeliste[2]
@@ -39,6 +41,6 @@ def create_string(eingabeliste):
 if __name__=='__main__':
     
     while True:
-        publish(create_string(koordinaten_eingabe()))
-        #publish('Hallo LOL')
+        publish(create_string(koordinaten_eingabe())) # fordert immer neue eingaben
+        #publish('Hallo LOL') #loopt immer den selben string
         time.sleep(0.75)
