@@ -17,10 +17,12 @@ client.loop_start()
 
 
 #publish Data zum Topic 'topic'
-while True:
-    client.publish("topic","Py Script Hallo")
-    time.sleep(2)
+def dauerschleife():
+    while True:
+        client.publish("topic","Py Script Hallo")
+        time.sleep(1)
 
-
+if __name__=='__main__':
+    dauerschleife()
 
 
