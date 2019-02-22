@@ -6,7 +6,7 @@ import numpy
 import paho.mqtt.client as mqtt
 
 #UDP Socket Setup
-UDP_IP_ADDRESS = "192.168.178.45" # IP vom Server (Empfänger-Standpunkt)
+UDP_IP_ADDRESS = "192.168.178.45" # IP vom Server (Empfanger-Standpunkt)
 UDP_PORT_NO = 49200
 
 serverSock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
@@ -20,6 +20,8 @@ broker_adress = "192.168.178.45"
 sensorClient = mqtt.Client()
 sensorClient.connect(broker_adress)
 sensorClient.loop_start()
+
+print('MQTT Client up')
 
 while True:
     data, addr = serverSock.recvfrom(1024)

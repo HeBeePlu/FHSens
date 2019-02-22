@@ -16,7 +16,7 @@ client = mqtt.Client()#mqtt.Client("Client_Name") optional aber Name darf nur ei
 client.connect(broker_adress)
 
 #Topic "topic" wird abonniert mit einem Quality of Service qos
-client.subscribe("topic", 0)
+client.subscribe("Sensor", 0)
 
 def on_message(client, userdata, msg):
     print(msg.topic + " " + str(msg.payload))

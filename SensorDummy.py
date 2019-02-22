@@ -1,4 +1,4 @@
-# Dieses Skript soll ein Dummy für einen Sensor sein, welcher seine Messdaten über UDP versendet
+# Dieses Skript soll ein Dummy fur einen Sensor sein, welcher seine Messdaten uber UDP versendet
 # Dies ist ein UDP Client, welcher Daten an den UDP Server senden soll
 
 import socket
