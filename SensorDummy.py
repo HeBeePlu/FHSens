@@ -4,7 +4,7 @@
 import socket
 import time
 
-UDP_IP_ADDRESS = "192.168.178.45
+UDP_IP_ADDRESS = "192.168.178.45"
 UDP_PORT_NO = 49200
 
 msg = "Hallo Server"
