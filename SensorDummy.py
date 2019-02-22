@@ -8,6 +8,7 @@ UDP_IP_ADDRESS = "192.168.178.45"
 UDP_PORT_NO = 49200
 
 msg = "Hallo Server"
+sleepTime = 0.012
 
 #erstellen eines Sockets zur Verbindung mit dem Server
 clientSock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
@@ -15,8 +16,15 @@ print('UDP socket up')
 #senden der Daten an den server
 def main():
     while True:
-        clientSock.sendto(msg.encode('utf-8'), (UDP_IP_ADDRESS, UDP_PORT_NO))
-        time.sleep(0.66)
+        for msg in range(0, 256):
+            msg=str(msg)
+            clientSock.sendto(msg.encode('utf-8'), (UDP_IP_ADDRESS, UDP_PORT_NO))
+            time.sleep(sleepTime)
+            
+        for msg in range (256, 0, -1):
+            msg=str(msg)
+            clientSock.sendto(msg.encode('utf-8'), (UDP_IP_ADDRESS, UDP_PORT_NO))
+            time.sleep(sleepTime)
 
 if __name__=='__main__':
     main()
