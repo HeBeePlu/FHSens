@@ -2,6 +2,7 @@
 # Dies ist ein UDP Client, welcher Daten an den UDP Server senden soll
 
 import socket
+import time
 
 UDP_IP_ADDRESS = "192.168.178.45
 UDP_PORT_NO = 49200
@@ -12,4 +13,10 @@ msg = "Hallo Server"
 clientSock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
 #senden der Daten an den server
-clientSock.sendto(msg, (UDP_IP_ADDRESS, UDP_PORT_NO))
+def main():
+    while True:
+        clientSock.sendto(msg, (UDP_IP_ADDRESS, UDP_PORT_NO))
+        time.sleep(0.66)
+
+if __name__=='__main__':
+    main()
