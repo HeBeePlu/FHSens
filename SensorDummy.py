@@ -11,7 +11,7 @@ msg = "Hallo Server"
 
 #erstellen eines Sockets zur Verbindung mit dem Server
 clientSock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-
+print('UDP socket up')
 #senden der Daten an den server
 def main():
     while True:
