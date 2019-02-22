@@ -15,7 +15,7 @@ clientSock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 #senden der Daten an den server
 def main():
     while True:
-        clientSock.sendto(msg, (UDP_IP_ADDRESS, UDP_PORT_NO))
+        clientSock.sendto(msg.encode('utf-8'), (UDP_IP_ADDRESS, UDP_PORT_NO))
         time.sleep(0.66)
 
 if __name__=='__main__':
