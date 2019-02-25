@@ -8,12 +8,12 @@ import json
 
 #UDP Socket Setup
 UDP_IP_ADDRESS = "192.168.178.45" # IP vom Server (Empfanger-Standpunkt)
-UDP_PORT_NO = 49200
+UDP_PORT_NO = 49800
 
 serverSock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
 serverSock.bind((UDP_IP_ADDRESS, UDP_PORT_NO))
-print ('UDP Server up: Port 49200')
+print ('UDP Server up: Port 49800')
 
 #MQTT Publisher Setup
 broker_adress = "192.168.178.45"
@@ -27,6 +27,6 @@ print('MQTT Client up')
 while True:
     data, addr = serverSock.recvfrom(1024)
     dataToMQTT = json.dumps(data)
-    sensorClient.publish("Sensor", data)
+    sensorClient.publish("Sensor", dataToMQTT)
     
     print("Message: ", data)
