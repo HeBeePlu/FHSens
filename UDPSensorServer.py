@@ -26,6 +26,7 @@ print('MQTT Client up')
 
 while True:
     data, addr = serverSock.recvfrom(1024)
+    dataToMQTT = json.dumps(data)
     sensorClient.publish("Sensor", data)
     
     print("Message: ", data)
