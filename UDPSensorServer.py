@@ -1,9 +1,10 @@
-# UDP server zur annahme der sensordten
+# UDP server zur annahme der sensordten und weitergabe an MQTT Brocker in Form eines JSON Paketes
 
 import socket
 import time
 import numpy
 import paho.mqtt.client as mqtt
+import json
 
 #UDP Socket Setup
 UDP_IP_ADDRESS = "192.168.178.45" # IP vom Server (Empfanger-Standpunkt)
