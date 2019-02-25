@@ -7,6 +7,7 @@
 
 
 import paho.mqtt.client as mqtt
+import json
 
 broker_adress = "192.168.178.45"
 
@@ -19,7 +20,8 @@ client.connect(broker_adress)
 client.subscribe("Sensor", 0)
 
 def on_message(client, userdata, msg):
-    print(msg.topic + " " + str(msg.payload))
+    msg_in = json.loads(msg.payload)
+    print(msg.topic + " " + str(msg_in))
     
     
 client.on_message = on_message
