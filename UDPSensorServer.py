@@ -8,7 +8,7 @@ import json
 
 #UDP Socket Setup
 UDP_IP_ADDRESS = "192.168.178.45" # IP vom Server (Empfanger-Standpunkt)
-UDP_PORT_NO = 49800
+UDP_PORT_NO = 49200
 
 serverSock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
