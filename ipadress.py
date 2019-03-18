@@ -11,4 +11,4 @@ def get_ip():
         s.close()
     return IP
 
-print (get_ip())
+#print (get_ip())

@@ -3,6 +3,7 @@
 
 import socket
 import time
+import ipadress
 
 UDP_IP_ADDRESS = "192.168.178.45"
 UDP_PORT_NO = 49200
@@ -12,7 +13,8 @@ sleepTime = 0.012
 
 #erstellen eines Sockets zur Verbindung mit dem Server
 clientSock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-print('UDP socket up')
+print('UDP Sensor socket up')
+print (ipadress.get_ip())
 #senden der Daten an den server
 def main():
     while True:
