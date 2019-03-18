@@ -8,6 +8,7 @@
 
 import paho.mqtt.client as mqtt
 import json
+import ipadress
 
 broker_adress = "192.168.178.45"
 
@@ -17,7 +18,9 @@ client = mqtt.Client()#mqtt.Client("Client_Name") optional aber Name darf nur ei
 client.connect(broker_adress)
 
 #Topic "topic" wird abonniert mit einem Quality of Service qos
-client.subscribe("Sensor", 0)
+client.subscribe("UDP-Sensor", 0)
+
+print("Subscriber-Service IP: ", ipadress.get_ip())
 
 def on_message(client, userdata, msg):
     msg_in = json.loads(msg.payload)

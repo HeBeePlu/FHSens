@@ -14,7 +14,7 @@ sleepTime = 0.012
 #erstellen eines Sockets zur Verbindung mit dem Server
 clientSock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 print('UDP Sensor socket up')
-print (ipadress.get_ip())
+print ('UDP-Sensor IP: ', ipadress.get_ip())
 #senden der Daten an den server
 def main():
     while True:
