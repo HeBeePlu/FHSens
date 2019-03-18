@@ -5,6 +5,7 @@ import time
 import numpy
 import paho.mqtt.client as mqtt
 import json
+import ipadress
 
 #UDP Socket Setup
 UDP_IP_ADDRESS = "192.168.178.45" # IP vom Server (Empfanger-Standpunkt)
@@ -23,7 +24,7 @@ sensorClient.connect(broker_adress)
 sensorClient.loop_start()
 
 print('MQTT Client up')
-
+print ('UDP-to-MQTT-Service IP: ', ipadress.get_ip())
 while True:
     data, addr = serverSock.recvfrom(1024)
     dataToMQTT = json.dumps(data)
