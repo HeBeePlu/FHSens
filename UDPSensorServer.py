@@ -24,7 +24,10 @@ sensorClient.connect(broker_adress)
 sensorClient.loop_start()
 
 print('MQTT Client up')
-print ('UDP-to-MQTT-Service IP: ', ipadress.get_ip())
+
+udptomqtt_service_ip = json.dumps(ipadress.get_ip())
+sensorClient.publish("ServiceRegister", udptomqtt_service_ip)
+print ('UDP-to-MQTT-Service IP: ', udptomqtt_service_ip)
 
 while True:
     data, addr = serverSock.recvfrom(1024)

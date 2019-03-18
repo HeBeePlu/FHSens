@@ -20,6 +20,9 @@ client.connect(broker_adress)
 #Topic "topic" wird abonniert mit einem Quality of Service qos
 client.subscribe("UDP-Sensor", 0)
 
+
+subscriber_service_ip = json.dumps(ipadress.get_ip())
+sensorClient.publish("ServiceRegister", subscriber_service_ip)
 print("Subscriber-Service IP: ", ipadress.get_ip())
 
 def on_message(client, userdata, msg):
