@@ -25,9 +25,10 @@ sensorClient.loop_start()
 
 print('MQTT Client up')
 print ('UDP-to-MQTT-Service IP: ', ipadress.get_ip())
+
 while True:
     data, addr = serverSock.recvfrom(1024)
     dataToMQTT = json.dumps(data)
-    sensorClient.publish("Sensor", dataToMQTT)
+    sensorClient.publish("UDP-Sensor", dataToMQTT)
     
     print("Message: ", data)
