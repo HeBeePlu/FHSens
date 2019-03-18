@@ -28,8 +28,8 @@ def main():
                 msg=str(msg)
                 clientSock.sendto(msg.encode('utf-8'), (UDP_IP_ADDRESS, UDP_PORT_NO))
                 time.sleep(sleepTime)
-      except:
-          print("Sensor abgestürzt")
+    except:
+        print("Sensor abgestürzt")
 
 if __name__=='__main__':
     main()
