@@ -25,9 +25,9 @@ service_ip = ipadress.get_ip()
 service_name = 'Subscriber Service'
 service_status = True
 
-service_props = { 'ServiceName' : service_name,
+service_props = { service_name : {
                   'Service IP' : service_ip,
-                  'Servicestatus' : service_status }
+                  'Servicestatus' : service_status }}
 
 register_msg = json.dumps(service_props)
 client.publish("ServiceRegister", register_msg)
@@ -44,7 +44,7 @@ def main():
         
     except:
         service_status = False
-        service_props.update({'Servicestatus': service_status})
+        service_props[service_name]['Servicestatus'] = service_status
         register_msg = json.dumps(service_props)
         client.publish("ServiceRegister", register_msg)
         print("Subscriber Service down")

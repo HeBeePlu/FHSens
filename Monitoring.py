@@ -46,7 +46,7 @@ def main():
         
     except:
         service_status = False
-        service_props.update({'Servicestatus': service_status})
+        service_props[service_name]['Servicestatus'] = service_status
         register_msg = json.dumps(service_props)
         client.publish("ServiceRegister", register_msg)
         print("Monitoring Service down")
