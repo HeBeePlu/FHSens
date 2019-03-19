@@ -21,9 +21,9 @@ service_ip = ipadress.get_ip()
 service_name = 'Monitoring Service'
 service_status = True
 
-service_props = { 'ServiceName' : service_name,
+service_props = { service_name : {
                   'Service IP' : service_ip,
-                  'Servicestatus' : service_status }
+                  'Servicestatus' : service_status }}
 
 register_msg = json.dumps(service_props)
 client.publish("ServiceRegister", register_msg)
@@ -33,11 +33,11 @@ print ('Monitoring_Service IP: ', service_ip)
 
 def on_message(client, userdata, msg):
     msg_in = json.loads(msg.payload)
-    #print(str(msg_in))
+    print(str(msg_in))
     name = msg_in['ServiceName']
     ip = msg_in['Service IP']
     status = msg_in['Servicestatus']
-    print(name + ' ' + ip +  ' ' + str(status))
+    #print(name + ' ' + ip +  ' ' + str(status))
     
 def main():
     try:
