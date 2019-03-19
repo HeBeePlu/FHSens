@@ -22,7 +22,7 @@ service_props = { 'ServiceName' : service_name,
 serverSock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
 serverSock.bind((UDP_IP_ADDRESS, UDP_PORT_NO))
-print ('UDP Server up: Port 49800')
+print ('UDP Server up: ' + str(UDP_PORT_NO))
 
 #MQTT Publisher Setup
 broker_adress = "192.168.178.45"
@@ -37,20 +37,20 @@ sensorClient.publish("ServiceRegister", register_msg)
 print ('UDPtoMQTT_Service IP: ', service_ip)
 
 def main ():
-    while True:
-        try:
+    try:
+        while True:
             data, addr = serverSock.recvfrom(1024)
             dataToMQTT = json.dumps(data)
             sensorClient.publish("UDP-Sensor", dataToMQTT)
             
             print("Message: ", data)
-        except:
+    except:
             service_status = False
             service_props.update({'Servicestatus': service_status})
             register_msg = json.dumps(service_props)
             sensorClient.publish("ServiceRegister", register_msg)
             print("UDPtoMQTT Service down")
             
-        
+    
 if __name__=='__main__':
     main()
