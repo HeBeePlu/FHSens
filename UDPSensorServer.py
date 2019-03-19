@@ -36,9 +36,21 @@ register_msg = json.dumps(service_props)
 sensorClient.publish("ServiceRegister", register_msg)
 print ('UDPtoMQTT_Service IP: ', service_ip)
 
-while True:
-    data, addr = serverSock.recvfrom(1024)
-    dataToMQTT = json.dumps(data)
-    sensorClient.publish("UDP-Sensor", dataToMQTT)
-    
-    print("Message: ", data)
+def main ():
+    while True:
+        try:
+            data, addr = serverSock.recvfrom(1024)
+            dataToMQTT = json.dumps(data)
+            sensorClient.publish("UDP-Sensor", dataToMQTT)
+            
+            print("Message: ", data)
+        except:
+            service_status = False
+            service_props.update({'Servicestatus': service_status})
+            register_msg = json.dumps(service_props)
+            sensorClient.publish("ServiceRegister", register_msg)
+            print("UDPtoMQTT Service abgestürzt")
+            
+        
+if __name__=='__main__':
+    main()
