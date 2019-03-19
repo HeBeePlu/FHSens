@@ -15,7 +15,7 @@ broker_adress = "192.168.178.45"
 
 sensorClient = mqtt.Client()
 sensorClient.connect(broker_adress)
-#sensorClient.loop_start()
+sensorClient.loop_start()
 
 print('MQTT Client up')
 
