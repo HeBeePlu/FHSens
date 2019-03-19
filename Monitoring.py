@@ -1,5 +1,5 @@
 
-#Register Service
+#Register und Monitoring Service
 # 19.03.2019
 
 import paho.mqtt.client as mqtt
@@ -14,11 +14,11 @@ client = mqtt.Client()#mqtt.Client("Client_Name") optional aber Name darf nur ei
 client.connect(broker_adress)
 
 #Topic "topic" wird abonniert mit einem Quality of Service qos
-client.subscribe("UDP-Sensor", 0)
+client.subscribe("ServiceRegister", 0)
 print('MQTT Client up')
 
 service_ip = ipadress.get_ip()
-service_name = 'Subscriber Service'
+service_name = 'Monitoring Service'
 service_status = True
 
 service_props = { 'ServiceName' : service_name,
@@ -27,11 +27,15 @@ service_props = { 'ServiceName' : service_name,
 
 register_msg = json.dumps(service_props)
 client.publish("ServiceRegister", register_msg)
-print ('Subscriber_Service IP: ', service_ip)
+print ('Monitoring_Service IP: ', service_ip)
+
+
 
 def on_message(client, userdata, msg):
     msg_in = json.loads(msg.payload)
-    print(msg.topic + " " + str(msg_in))
+    #msg_in = msg_in.encode('utf-8')
+    name = msg_in['ServiceName']
+    print(str(name))
     
 def main():
     try:
@@ -43,7 +47,7 @@ def main():
         service_props.update({'Servicestatus': service_status})
         register_msg = json.dumps(service_props)
         client.publish("ServiceRegister", register_msg)
-        print("Subscriber Service down")
+        print("Monitoring Service down")
 
 if __name__=='__main__':
     main()
