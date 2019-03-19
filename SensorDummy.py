@@ -55,7 +55,7 @@ def main():
         service_props.update({'Servicestatus': service_status})
         register_msg = json.dumps(service_props)
         sensorClient.publish("ServiceRegister", register_msg)
-        print("Sensor abgestürzt")
+        print("Sensor down")
 
 if __name__=='__main__':
     main()
