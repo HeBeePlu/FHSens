@@ -33,9 +33,11 @@ print ('Monitoring_Service IP: ', service_ip)
 
 def on_message(client, userdata, msg):
     msg_in = json.loads(msg.payload)
-    #msg_in = msg_in.encode('utf-8')
+    #print(str(msg_in))
     name = msg_in['ServiceName']
-    print(str(name))
+    ip = msg_in['Service IP']
+    status = msg_in['Servicestatus']
+    print(name + ' ' + ip +  ' ' + str(status))
     
 def main():
     try:
