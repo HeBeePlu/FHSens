@@ -27,13 +27,13 @@ print ('UDP Server up: ' + str(UDP_PORT_NO))
 #MQTT Publisher Setup
 broker_adress = "192.168.178.45"
 
-sensorClient = mqtt.Client()
-sensorClient.connect(broker_adress)
-sensorClient.loop_start()
+serviceClient = mqtt.Client()
+serviceClient.connect(broker_adress)
+serviceClient.loop_start()
 print('MQTT Client up')
 
 register_msg = json.dumps(service_props)
-sensorClient.publish("ServiceRegister", register_msg)
+serviceClient.publish("ServiceRegister", register_msg)
 print ('UDPtoMQTT_Service IP: ', service_ip)
 
 def main ():
@@ -48,7 +48,7 @@ def main ():
             service_status = False
             service_props.update({'Servicestatus': service_status})
             register_msg = json.dumps(service_props)
-            sensorClient.publish("ServiceRegister", register_msg)
+            serviceClient.publish("ServiceRegister", register_msg)
             print("UDPtoMQTT Service down")
             
     

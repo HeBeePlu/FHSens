@@ -30,7 +30,7 @@ service_props = { 'ServiceName' : service_name,
                   'Servicestatus' : service_status }
 
 register_msg = json.dumps(service_props)
-sensorClient.publish("ServiceRegister", register_msg)
+client.publish("ServiceRegister", register_msg)
 print ('Subscriber_Service IP: ', service_ip)
 
 def on_message(client, userdata, msg):
@@ -46,7 +46,7 @@ def main():
         service_status = False
         service_props.update({'Servicestatus': service_status})
         register_msg = json.dumps(service_props)
-        sensorClient.publish("ServiceRegister", register_msg)
+        client.publish("ServiceRegister", register_msg)
         print("Subscriber Service down")
 
 if __name__=='__main__':
