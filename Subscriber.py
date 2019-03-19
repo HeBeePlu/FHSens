@@ -31,7 +31,7 @@ service_props = { 'ServiceName' : service_name,
 
 register_msg = json.dumps(service_props)
 sensorClient.publish("ServiceRegister", register_msg)
-print ('UDPtoMQTT_Service IP: ', service_ip)
+print ('Subscriber_Service IP: ', service_ip)
 
 def on_message(client, userdata, msg):
     msg_in = json.loads(msg.payload)
@@ -48,3 +48,6 @@ def main():
         register_msg = json.dumps(service_props)
         sensorClient.publish("ServiceRegister", register_msg)
         print("Subscriber Service down")
+
+if __name__=='__main__':
+    main()
