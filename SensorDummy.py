@@ -4,9 +4,20 @@
 import socket
 import time
 import ipadress
+import json
+import paho.mqtt.client as mqtt
 
 UDP_IP_ADDRESS = "192.168.178.45"
 UDP_PORT_NO = 49200
+
+#MQTT Publisher Setup
+broker_adress = "192.168.178.45"
+
+sensorClient = mqtt.Client()
+sensorClient.connect(broker_adress)
+#sensorClient.loop_start()
+
+print('MQTT Client up')
 
 service_ip = ipadress.get_ip()
 service_name = 'Sensor Dummy'
@@ -24,12 +35,12 @@ service_props = { 'ServiceName' : service_name,
     
 
 register_msg = json.dumps(service_props)
-sensorClient.publish("ServiceRegister", service_props)
+sensorClient.publish("ServiceRegister", register_msg)
 print ('UDP-Sensor IP: ', service_ip)
 #senden der Daten an den server
 def main():
     try:
-        while service_status = True:
+        while True:
             for msg in range(0, 256):
                 msg=str(msg)
                 clientSock.sendto(msg.encode('utf-8'), (UDP_IP_ADDRESS, UDP_PORT_NO))
@@ -43,7 +54,7 @@ def main():
         service_status = False
         service_props.update({'Servicestatus': service_status})
         register_msg = json.dumps(service_props)
-        sensorClient.publish("ServiceRegister", service_props)
+        sensorClient.publish("ServiceRegister", register_msg)
         print("Sensor abgestürzt")
 
 if __name__=='__main__':
