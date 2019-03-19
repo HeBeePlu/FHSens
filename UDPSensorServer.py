@@ -11,6 +11,8 @@ import ipadress
 UDP_IP_ADDRESS = "192.168.178.45" # IP vom Server (Empfanger-Standpunkt)
 UDP_PORT_NO = 49200
 
+service_ip = ipadress.get_ip()
+
 serverSock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
 serverSock.bind((UDP_IP_ADDRESS, UDP_PORT_NO))

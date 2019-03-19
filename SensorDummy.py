@@ -8,6 +8,8 @@ import ipadress
 UDP_IP_ADDRESS = "192.168.178.45"
 UDP_PORT_NO = 49200
 
+service_ip = ipadress.get_ip()
+
 msg = "Hallo Server"
 sleepTime = 0.012
 
