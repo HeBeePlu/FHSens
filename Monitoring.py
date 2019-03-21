@@ -39,7 +39,7 @@ def on_message(client, userdata, msg):
     #name = msg_in[service_name]
     ip = msg_in[1]['Service IP']
     #status = msg_in['Servicestatus']
-    print(str(msg_in[1][ip]))
+    print(str(msg_in[0][ip]))
     
 def main():
     try:
