@@ -36,10 +36,10 @@ def on_message(client, userdata, msg):
     
     #todo monitoring dict erstellen, welches sich bei statusanderung updatet
     print(str(msg_in))
-    name = msg_in['ServiceName']
-    ip = msg_in['Service IP']
-    status = msg_in['Servicestatus']
-    print(name + ' ' + ip +  ' ' + str(status))
+    #name = msg_in[service_name]
+    ip = msg_in[1]['Service IP']
+    #status = msg_in['Servicestatus']
+    print(str(msg_in[1][ip]))
     
 def main():
     try:
