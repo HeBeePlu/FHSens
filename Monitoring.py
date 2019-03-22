@@ -35,14 +35,10 @@ print ('Monitoring_Service IP: ', service_ip)
 
 
 def on_message(client, userdata, msg):
-    msg_in = json.loads(msg.payload)
+    serviceToMonitor = json.loads(msg.payload)
     
-    #todo monitoring dict erstellen, welches sich bei statusanderung updatet
-    print(str(msg_in))
-    #name = msg_in[service_name]
-    ip = msg_in[1]['Service IP']
-    #status = msg_in['Servicestatus']
-    #print(str(msg_in[0][ip]))
+    print(str(serviceToMonitor))
+    
     
 def main():
     try:
