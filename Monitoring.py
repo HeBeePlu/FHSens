@@ -28,6 +28,9 @@ service_props = { service_name : {
                   'Service IP' : service_ip,
                   'Servicestatus' : service_status }}
 
+#Monitoring Service in DB einfuegen
+db.services.insertOne(service_props)
+
 register_msg = json.dumps(service_props)
 client.publish("ServiceRegister", register_msg)
 print ('Monitoring_Service IP: ', service_ip)
@@ -37,6 +40,7 @@ print ('Monitoring_Service IP: ', service_ip)
 def on_message(client, userdata, msg):
     serviceToMonitor = json.loads(msg.payload)
     
+    result = db.reviews.
     print(str(serviceToMonitor))
     
     
