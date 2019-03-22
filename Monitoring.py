@@ -7,9 +7,11 @@ import json
 import ipadress
 from pymongo import MongoClient
 
+#Initialisieren der datenbank zum Servicemonitoring
 dataClient = MongoClient(port = 27017)
+db = dataClient.serviceMonitor
 
-
+#MQTT Client einrichten
 broker_adress = "192.168.178.45"
 client = mqtt.Client()#mqtt.Client("Client_Name") optional aber Name darf nur ein mal vergeben werden
 #client.connect("localhost", 1883, 60) #alternative zur ip
