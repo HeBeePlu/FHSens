@@ -7,13 +7,13 @@ import json
 import ipadress
 from pymongo import MongoClient
 
+dataClient = MongoClient(port = 27017)
+
+
 broker_adress = "192.168.178.45"
-
 client = mqtt.Client()#mqtt.Client("Client_Name") optional aber Name darf nur ein mal vergeben werden
-
 #client.connect("localhost", 1883, 60) #alternative zur ip
 client.connect(broker_adress)
-
 #Topic "topic" wird abonniert mit einem Quality of Service qos
 client.subscribe("ServiceRegister", 0)
 print('MQTT Client up')
