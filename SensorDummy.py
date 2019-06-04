@@ -1,5 +1,11 @@
-# Dieses Skript soll ein Dummy fur einen Sensor sein, welcher seine Messdaten uber UDP versendet
-# Dies ist ein UDP Client, welcher Daten an den UDP Server senden soll
+# Dieses Srcipt simuliert einen Sensor, der Daten an via UDP ubertraegt
+# Dies ist ein UDP Client, welcher Beispiel-Daten an den UDP Server sendet
+#
+#
+#
+#
+# Hendrik Beecken
+
 
 import socket
 import time
@@ -7,8 +13,8 @@ import ipadress
 import json
 import paho.mqtt.client as mqtt
 
-UDP_IP_ADDRESS = "192.168.178.45"
-UDP_PORT_NO = 49200
+UDP_IP_ADDRESS = "172.17.0.2" #IP des Servers an den die Daten gesendet werden sollen, zur zeit hard gecodet
+UDP_PORT_NO = 8888
 
 #MQTT Publisher Setup
 broker_adress = "192.168.178.45"

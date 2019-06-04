@@ -1,7 +1,16 @@
 FROM python:3
 
-ADD Publisher.py /
 
-RUN pip install paho-mqtt
 
-CMD [ "python", "./Publisher.py" ]
+ENV UDPPORT 8888 
+ADD udp2mqtt.py /
+COPY ipadress.py /
+
+
+RUN pip install paho-mqtt \
+  && pip install virtualenv
+
+CMD [ "python", "./udp2mqtt.py" ]
+
+EXPOSE ${UDPPORT}
+EXPOSE ${UDPPORT}/udp
