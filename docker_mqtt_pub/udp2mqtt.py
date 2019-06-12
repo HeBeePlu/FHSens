@@ -34,18 +34,20 @@ adressToMQTT=json.dumps(adress)
 serviceClient.publish("UDP-Sensor", adressToMQTT) #testweise senden der Container IP uber mqtt
 
 def main ():
-    
-    while True:
-        data, addr = serverSock.recvfrom(1024) #Daten vom UDP Port empfangen
-        timeStamp = str(datetime.now().time())
-        data = str(data)
-        msg = {'Messwert': data, 'Zeit udp2mqtt' : timeStamp}
-        dataToMQTT = json.dumps(msg)
-        #serviceClient.publish("UDP-Sensor", data) #Daten an MQTT Topic senden ohne JSON Format
-        serviceClient.publish("UDP-Sensor", dataToMQTT) #Daten im JSON Format an MQTT Topic senden
-        print("Message: ", dataToMQTT)
-        
-        #print("Message: ", data, adress)
+    try:
+        while True:
+            data, addr = serverSock.recvfrom(1024) #Daten vom UDP Port empfangen
+            timeStamp = str(datetime.now().time())
+            data = str(data)
+            msg = {'Messwert': data, 'Zeit udp2mqtt' : timeStamp}
+            dataToMQTT = json.dumps(msg)
+            #serviceClient.publish("UDP-Sensor", data) #Daten an MQTT Topic senden ohne JSON Format
+            serviceClient.publish("UDP-Sensor", dataToMQTT) #Daten im JSON Format an MQTT Topic senden
+            print("Message: ", dataToMQTT)
             
+            #print("Message: ", data, adress)
+    except:
+        print('Konvertierung fehlgeschlagen')
+        
 if __name__=='__main__':
     main()        
