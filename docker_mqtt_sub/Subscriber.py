@@ -9,8 +9,9 @@
 import paho.mqtt.client as mqtt
 import json
 import ipadress
+from datetime import datetime
 
-broker_adress = "192.168.178.45"
+broker_adress = "192.168.178.45" #ip des geraetes, auf dem der mqtt brocker laeuft
 
 client = mqtt.Client()#mqtt.Client("Client_Name") optional aber Name darf nur ein mal vergeben werden
 
@@ -23,30 +24,26 @@ print('MQTT Client up')
 
 service_ip = ipadress.get_ip()
 service_name = 'Subscriber Service'
-service_status = True
 
-service_props = { service_name : {
-                  'Service IP' : service_ip,
-                  'Servicestatus' : service_status }}
-
-register_msg = json.dumps(service_props)
-client.publish("ServiceRegister", register_msg)
 print ('Subscriber_Service IP: ', service_ip)
 
+logfile = open('Log.txt', 'w')  #logfile erstellen
+
+#funktion zum auslesen des mqtt topics
 def on_message(client, userdata, msg):
-    msg_in = json.loads(msg.payload)
-    print(msg.topic + " " + str(msg_in))
+    msg_in = json.loads(msg.payload) #json daten entpacken
+    timeStamp = str(datetime.now().time()) #zeitstempel einfuegen
+    
+    logfile.write('Topic: ' + msg.topic + " " + str(msg_in)+ ' ' + 'Subscriberzeit: ' + timeStamp + '\n')
+    print('Topic: ' + msg.topic + " " + str(msg_in)+ ' ' + timeStamp)
     
 def main():
     try:
         client.on_message = on_message
         client.loop_forever()
-        
+    # stoerungsmeldung 
     except:
-        service_status = False
-        service_props[service_name]['Servicestatus'] = service_status
-        register_msg = json.dumps(service_props)
-        client.publish("ServiceRegister", register_msg)
+        
         print("Subscriber Service down")
 
 if __name__=='__main__':

@@ -30,7 +30,7 @@ service_ip = ipadress.get_ip()
 service_name = 'Sensor Dummy'
 service_status = True
 
-sleepTime = 0.012
+sleepTime = 0.012 # daten im 12ms Takt
 
 #erstellen eines Sockets zur Verbindung mit dem Server
 clientSock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)

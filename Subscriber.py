@@ -27,19 +27,23 @@ service_name = 'Subscriber Service'
 
 print ('Subscriber_Service IP: ', service_ip)
 
+logfile = open('Log.txt', 'w')  #logfile erstellen
+
 #funktion zum auslesen des mqtt topics
 def on_message(client, userdata, msg):
     msg_in = json.loads(msg.payload) #json daten entpacken
     timeStamp = str(datetime.now().time()) #zeitstempel einfuegen
-    #to do: print to file im docker container einfuegen
+    
+    logfile.write('Topic: ' + msg.topic + " " + str(msg_in)+ ' ' + 'Subscriberzeit: ' + timeStamp + '\n')
     print('Topic: ' + msg.topic + " " + str(msg_in)+ ' ' + timeStamp)
     
 def main():
     try:
         client.on_message = on_message
         client.loop_forever()
-    # störungsmeldung 
+    # stoerungsmeldung 
     except:
+        
         print("Subscriber Service down")
 
 if __name__=='__main__':
