@@ -13,8 +13,8 @@ import ipadress
 import json
 import paho.mqtt.client as mqtt
 
-UDP_IP_ADDRESS = "192.168.178.45"
-#UDP_IP_ADDRESS = "172.17.0.2" #IP des Servers an den die Daten gesendet werden sollen, zur zeit hard gecodet
+#UDP_IP_ADDRESS = "192.168.178.45" #IP des RasPI zum testen ausserhalb des containers
+UDP_IP_ADDRESS = "172.17.0.2" #IP des Servers an den die Daten gesendet werden sollen, zur zeit hard gecodet
 UDP_PORT_NO = 8888
 
 #MQTT Publisher Setup

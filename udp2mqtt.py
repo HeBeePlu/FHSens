@@ -41,6 +41,7 @@ def main ():
         #serviceClient.publish("UDP-Sensor", data)
         serviceClient.publish("UDP-Sensor", dataToMQTT)
         print("Message: ", dataToMQTT)
+    
             
 if __name__=='__main__':
     main()        
