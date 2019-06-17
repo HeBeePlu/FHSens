@@ -35,6 +35,7 @@ print ('UDPtoMQTT_Service IP: ', service_ip)
 def main ():
     while True:
         data, addr = serverSock.recvfrom(1024)
+        data = str(data)
         timeStamp = str(datetime.now().time())
         msg = {'Messwert': data, 'Zeit udp2mqtt' : timeStamp}
         dataToMQTT = json.dumps(msg)

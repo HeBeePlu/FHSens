@@ -1,11 +1,12 @@
-# Datenverarbeitung als Durchgangststion zwischen diversen Containern
-#
-# nimmt eingehende Daten an und gibt sie auf anderem topic wieder aus
+# Datenverarbeitung als Filter
+# 
+# nimmt eingehende Daten an und gibt jede 10te eingehende nachricht auf neuem Topic weiter
 #
 #
 
 import paho.mqtt.client as mqtt
 import json
+#import yaml
 import ipadress
 from datetime import datetime
 
@@ -23,22 +24,25 @@ print('MQTT Client up')
 
 #Infos dieses Services
 service_ip = ipadress.get_ip()
-service_name = 'Durchgangs Service'
+service_name = 'Filter Service'
 print ('Subscriber_Service IP: ', service_ip)
 
-#funktion zum auslesen des mqtt topics 'UDP-Sensor' und weiterleiten an neues Topic 'Data-Log'
+#funktion zum auslesen des mqtt topics 'UDP-Sensor' und weiterleiten an neues Topic 'data-filter'
 def on_message(client, userdata, msg):
+    #msg_in = msg.payload
     msg_in = json.loads(msg.payload) #json daten entpacken
-    timeStamp = str(datetime.now().time()) #zeitstempel einfuegen
-    newMsg = str(msg_in) + ' ' + timeStamp #neue Message an ein weiteres MQTT Topic erstellen
-    dataToMQTT = json.dumps(newMsg) #als JSON verpacken
+    #msg_in = msg_in.encode('latin1')
+    #timeStamp = str(datetime.now().time()) #zeitstempel einfuegen
+    #newMsg = str(msg_in) + ' ' + timeStamp #neue Message an ein weiteres MQTT Topic erstellen
+    #dataFiltered = json.dumps(newMsg) #als JSON verpacken
     #print(newMsg)
-    client.publish("Data-Log", dataToMQTT) # an das Topic 'Data-Log' senden
-    print('Log Subscriber: ' + newMsg)
+    #client.publish("Data-Filter", dataFiltered) # an das Topic 'Data-Log' senden
+    #print('Log Subscriber: ' + newMsg)
+    print (msg_in['Messwert'])
     
 def main():
     try:
-        #client.loop_start()
+        
         client.on_message = on_message
         client.loop_forever()
     # stoerungsmeldung 
