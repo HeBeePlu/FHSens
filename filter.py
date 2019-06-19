@@ -36,7 +36,7 @@ def on_message(client, userdata, msg):
     #newMsg = str(msg_in) + ' ' + timeStamp #neue Message an ein weiteres MQTT Topic erstellen
     #dataFiltered = json.dumps(newMsg) #als JSON verpacken
     #print(newMsg)
-    #client.publish("Data-Filter", dataFiltered) # an das Topic 'Data-Log' senden
+    #client.publish("UDP-Sensor/Filter", dataFiltered) # an das Topic 'Data-Log' senden
     #print('Log Subscriber: ' + newMsg)
     print (msg_in['Messwert'])
     
