@@ -33,9 +33,9 @@ logfile = open('Log.txt', 'w')  #logfile erstellen
 def on_message(client, userdata, msg):
     msg_in = json.loads(msg.payload) #json daten entpacken
     timeStamp = str(datetime.now().time()) #zeitstempel einfuegen
-    
-    logfile.write('Topic: ' + msg.topic + " " + str(msg_in)+ ' ' + 'Subscriberzeit: ' + timeStamp + '\n')
-    print('Topic: ' + msg.topic + " " + str(msg_in)+ ' ' + timeStamp)
+    msg_in.update({'Log Zeit' : timeStamp})
+    logfile.write(str(msg_in) + '\n')
+    print(msg_in)
     
 def main():
     try:

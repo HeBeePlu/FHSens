@@ -30,11 +30,11 @@ print ('Subscriber_Service IP: ', service_ip)
 def on_message(client, userdata, msg):
     msg_in = json.loads(msg.payload) #json daten entpacken
     timeStamp = str(datetime.now().time()) #zeitstempel einfuegen
-    newMsg = str(msg_in) + ' ' + timeStamp #neue Message an ein weiteres MQTT Topic erstellen
-    dataToMQTT = json.dumps(newMsg) #als JSON verpacken
+    msg_in.update({'Transformer Zeit' : timeStamp}) #neue Message an ein weiteres MQTT Topic erstellen
+    dataToMQTT = json.dumps(msg_in) #als JSON verpacken
     #print(newMsg)
     client.publish("Data-Log", dataToMQTT) # an das Topic 'Data-Log' senden
-    print('Log Subscriber: ' + newMsg)
+    print('Log Subscriber: ' + dataToMQTT)
     
 def main():
     try:

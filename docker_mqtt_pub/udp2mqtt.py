@@ -41,11 +41,10 @@ def main ():
             data = str(data)
             msg = {'Messwert': data, 'Zeit udp2mqtt' : timeStamp}
             dataToMQTT = json.dumps(msg)
-            #serviceClient.publish("UDP-Sensor", data) #Daten an MQTT Topic senden ohne JSON Format
             serviceClient.publish("UDP-Sensor", dataToMQTT) #Daten im JSON Format an MQTT Topic senden
             print("Message: ", dataToMQTT)
             
-            #print("Message: ", data, adress)
+            
     except:
         print('Konvertierung fehlgeschlagen')
         

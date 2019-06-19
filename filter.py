@@ -6,7 +6,6 @@
 
 import paho.mqtt.client as mqtt
 import json
-#import yaml
 import ipadress
 from datetime import datetime
 
@@ -33,7 +32,7 @@ def on_message(client, userdata, msg):
     msg_in = json.loads(msg.payload) #json daten entpacken
     data = msg_in['Messwert'] #messwert extrahieren
     data = data.encode('ascii', 'ignore') # von unicode zu string wandeln
-   
+    print (len(data))
     if len(data) == 5:
         data = data[2] + data[3] #wert als ziffern isolieren
         data = int(data) #string zu int wandeln
@@ -41,26 +40,19 @@ def on_message(client, userdata, msg):
     else:
         data = data[2] + data [3] + data [4]
         data = int(data)
-            
+    # Filter zum auswahlen bestimmter werte      
     if data == 11 or data == 12 : #bestimmte werte sollen versendet werden
         timeStamp = str(datetime.now().time()) #zeitstempel einfuegen
         newMsg = str(msg_in) + ' ' + str(data) + ' ' + timeStamp #neue Message an ein weiteres MQTT Topic erstellen
-        dataFiltered = json.dumps(str(newMsg)) #als JSON verpacken
+        newMsg = str(newMsg)
+        dataFiltered = json.dumps(newMsg) #als JSON verpacken
         client.publish("UDP-Sensor/Filter", dataFiltered) # an das Topic senden
         print (newMsg)
     else:
         print(msg_in['Messwert'])
-    #timeStamp = str(datetime.now().time()) #zeitstempel einfuegen
-    #newMsg = str(msg_in) + ' ' + timeStamp #neue Message an ein weiteres MQTT Topic erstellen
-    #dataFiltered = json.dumps(str(msg_in['Messwert'])) #als JSON verpacken
-    
-    #client.publish("UDP-Sensor/Filter", dataFiltered) # an das Topic 'Data-Log' senden
-    #print (data)
-    
     
 def main():
-    try:
-        
+    try:        
         client.on_message = on_message
         client.loop_forever()
     # stoerungsmeldung 

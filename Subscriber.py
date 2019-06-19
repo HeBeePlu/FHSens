@@ -19,7 +19,7 @@ client = mqtt.Client()#mqtt.Client("Client_Name") optional aber Name darf nur ei
 client.connect(broker_adress)
 
 #Topic "topic" wird abonniert mit einem Quality of Service qos
-client.subscribe("UDP-Sensor/Filter", 0)
+client.subscribe("UDP-Sensor", 0)
 print('MQTT Client up')
 
 service_ip = ipadress.get_ip()
@@ -32,8 +32,8 @@ print ('Subscriber_Service IP: ', service_ip)
 def on_message(client, userdata, msg):
     msg_in = json.loads(msg.payload) #json daten entpacken
     timeStamp = str(datetime.now().time()) #zeitstempel einfuegen
-    
-    print('Topic: ' + msg.topic + " " + str(msg_in)+ ' ' + timeStamp)
+    msg_in.update({'Subscriber Zeit' : timeStamp})
+    print(msg_in)
     
 def main():
     try:
