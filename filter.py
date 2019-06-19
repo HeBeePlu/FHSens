@@ -29,16 +29,34 @@ print ('Subscriber_Service IP: ', service_ip)
 
 #funktion zum auslesen des mqtt topics 'UDP-Sensor' und weiterleiten an neues Topic 'data-filter'
 def on_message(client, userdata, msg):
-    #msg_in = msg.payload
+    
     msg_in = json.loads(msg.payload) #json daten entpacken
-    #msg_in = msg_in.encode('latin1')
+    data = msg_in['Messwert'] #messwert extrahieren
+    data = data.encode('ascii', 'ignore') # von unicode zu string wandeln
+   
+    if len(data) == 5:
+        data = data[2] + data[3] #wert als ziffern isolieren
+        data = int(data) #string zu int wandeln
+        
+    else:
+        data = data[2] + data [3] + data [4]
+        data = int(data)
+            
+    if data == 11 or data == 12 : #bestimmte werte sollen versendet werden
+        timeStamp = str(datetime.now().time()) #zeitstempel einfuegen
+        newMsg = str(msg_in) + ' ' + str(data) + ' ' + timeStamp #neue Message an ein weiteres MQTT Topic erstellen
+        dataFiltered = json.dumps(str(newMsg)) #als JSON verpacken
+        client.publish("UDP-Sensor/Filter", dataFiltered) # an das Topic senden
+        print (newMsg)
+    else:
+        print(msg_in['Messwert'])
     #timeStamp = str(datetime.now().time()) #zeitstempel einfuegen
     #newMsg = str(msg_in) + ' ' + timeStamp #neue Message an ein weiteres MQTT Topic erstellen
-    #dataFiltered = json.dumps(newMsg) #als JSON verpacken
-    #print(newMsg)
+    #dataFiltered = json.dumps(str(msg_in['Messwert'])) #als JSON verpacken
+    
     #client.publish("UDP-Sensor/Filter", dataFiltered) # an das Topic 'Data-Log' senden
-    #print('Log Subscriber: ' + newMsg)
-    print (msg_in['Messwert'])
+    #print (data)
+    
     
 def main():
     try:
@@ -48,7 +66,7 @@ def main():
     # stoerungsmeldung 
     except:
         
-        print("Subscriber Service down")
+        print("Filter Service down")
 
 if __name__=='__main__':
     main()
