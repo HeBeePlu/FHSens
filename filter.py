@@ -31,7 +31,7 @@ def on_message(client, userdata, msg):
     
     msg_in = json.loads(msg.payload) #json daten entpacken
     data = msg_in['Messwert'] #messwert extrahieren
-    data = data.encode('ascii', 'ignore') # von unicode zu string wandeln
+    #data = data.encode('ascii', 'ignore') # von unicode zu string wandeln
     print (len(data))
     if len(data) == 5:
         data = data[2] + data[3] #wert als ziffern isolieren

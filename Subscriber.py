@@ -19,7 +19,7 @@ client = mqtt.Client()#mqtt.Client("Client_Name") optional aber Name darf nur ei
 client.connect(broker_adress)
 
 #Topic "topic" wird abonniert mit einem Quality of Service qos
-client.subscribe("UDP-Sensor", 0)
+client.subscribe("UDP-Sensor/Filter", 0)
 print('MQTT Client up')
 
 service_ip = ipadress.get_ip()
