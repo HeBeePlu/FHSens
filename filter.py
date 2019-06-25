@@ -26,7 +26,7 @@ service_ip = ipadress.get_ip()
 service_name = 'Filter Service'
 print ('Subscriber_Service IP: ', service_ip)
 
-trigger = 0
+trigger = 0 # globale Variable zum ausloesen des Filters
 print (trigger)
 #funktion zum auslesen des mqtt topics 'UDP-Sensor' und weiterleiten an neues Topic 'data-filter'
 def on_message(client, userdata, msg):
@@ -34,7 +34,8 @@ def on_message(client, userdata, msg):
     msg_in = json.loads(msg.payload) #json daten entpacken
     data = msg_in['Messwert'] #messwert extrahieren
     data = str(data)
-    # Filter zum auswahlen bestimmter werte
+    
+    # Filter zum auswahlen von werten bei aenderung der groessenordnung
     n = (len(data))
     
     if (trigger != n):
@@ -45,14 +46,14 @@ def on_message(client, userdata, msg):
         dataFiltered = json.dumps(msg_in) #als JSON verpacken
         client.publish("UDP-Sensor/Filter", dataFiltered) # an das Topic senden
         print (data)
-        trigger = n
+        trigger = n #setzen der ausloeservariable auf vorher gueltigen wert
     
     
 def main():
-    #triggerwert fuer filter
-    global trigger
     
-    try:        
+    global trigger # globale variable einbinden
+    
+    try:  # channel fuer sensordaten abhoeren und daten filtern      
         client.on_message = on_message
         client.loop_forever()
     # stoerungsmeldung 
