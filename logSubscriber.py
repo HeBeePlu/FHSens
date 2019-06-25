@@ -18,12 +18,13 @@ client = mqtt.Client()#mqtt.Client("Client_Name") optional aber Name darf nur ei
 #client.connect("localhost", 1883, 60) #alternative zur ip
 client.connect(broker_adress)
 
-#Topic "topic" wird abonniert mit einem Quality of Service qos
+#Topic "xx" wird abonniert mit einem Quality of Service qos
 client.subscribe("Data-Log", 0)
 print('MQTT Client up')
 
+#Service Infos
 service_ip = ipadress.get_ip()
-service_name = 'Subscriber Service'
+service_name = 'Logging-Subscriber Service'
 
 print ('Subscriber_Service IP: ', service_ip)
 
