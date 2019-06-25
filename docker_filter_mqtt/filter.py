@@ -32,16 +32,12 @@ def on_message(client, userdata, msg):
     msg_in = json.loads(msg.payload) #json daten entpacken
     data = msg_in['Messwert'] #messwert extrahieren
     data = str(data)
-    # Filter zum auswahlen bestimmter werte
-    
-    trigger = len(data)
-    
-    
+    # Filter zum auswahlen bestimmter werte      
     timeStamp = str(datetime.now().time()) #zeitstempel einfuegen
     msg_in.update({'Filter Zeit' : timeStamp}) #neue Message erstellen    
     dataFiltered = json.dumps(msg_in) #als JSON verpacken
     client.publish("UDP-Sensor/Filter", dataFiltered) # an das Topic senden
-    print (type(len(data)))
+    print (data)
     
     
 def main():
