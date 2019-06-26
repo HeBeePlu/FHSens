@@ -1,8 +1,8 @@
 FROM python:3
 
-ADD Subscriber.py /
+ADD logSubscriber.py /
 COPY ipadress.py /
 
 RUN pip install paho-mqtt
 
-CMD [ "python", "./Subscriber.py" ]
+CMD [ "python", "./logSubscriber.py" ]

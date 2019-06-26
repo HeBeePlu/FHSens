@@ -1,6 +1,6 @@
 # Datenverarbeitung als Durchgangststion zwischen diversen Containern
 #
-#nimmt eingehende Daten an , veraendert sie und gibt diese weiter
+# nimmt eingehende Daten an und gibt sie auf anderem topic wieder aus
 #
 #
 
@@ -17,24 +17,24 @@ client = mqtt.Client()#mqtt.Client("Client_Name") optional aber Name darf nur ei
 client.connect(broker_adress)
 
 
-#Topic "topic" wird abonniert mit einem Quality of Service qos
+#Topic "udp-sensor" wird abonniert mit einem Quality of Service qos
 client.subscribe("UDP-Sensor", 0)
 print('MQTT Client up')
 
+#Infos dieses Services
 service_ip = ipadress.get_ip()
 service_name = 'Durchgangs Service'
-
 print ('Subscriber_Service IP: ', service_ip)
 
 #funktion zum auslesen des mqtt topics 'UDP-Sensor' und weiterleiten an neues Topic 'Data-Log'
 def on_message(client, userdata, msg):
     msg_in = json.loads(msg.payload) #json daten entpacken
     timeStamp = str(datetime.now().time()) #zeitstempel einfuegen
-    msg_in.update({'Transformer Zeit' : timeStamp}) #neue Message an ein weiteres MQTT Topic erstellen
+    msg_in.update({'Topic Change' : timeStamp}) #neue Message an ein weiteres MQTT Topic erstellen
     dataToMQTT = json.dumps(msg_in) #als JSON verpacken
     #print(newMsg)
     client.publish("Data-Log", dataToMQTT) # an das Topic 'Data-Log' senden
-    print('Log Subscriber: ' + dataToMQTT)
+    print(msg_in)
     
 def main():
     try:
