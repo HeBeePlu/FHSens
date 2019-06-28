@@ -42,11 +42,8 @@ def zeitformat (zeit):
 def on_message(client, userdata, msg):
     msg_in = json.loads(msg.payload) #json daten entpacken
     timeStamp = str(datetime.now().time()) #zeitstempel einfuegen
+    timeStamp = zeitformat(timeStamp)
     msg_in.update({'Log Zeit' : timeStamp})
-    startZeit = zeitformat(msg_in['Zeit udp2mqtt'])
-    msg_in.update({'Startzeit' : startZeit})
-    endZeit = zeitformat(timeStamp)
-    msg_in.update({'Endzeit' : endZeit})
     logfile.write(str(msg_in) + '\n')
     print(msg_in)
     
