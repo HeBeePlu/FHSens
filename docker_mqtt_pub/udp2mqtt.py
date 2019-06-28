@@ -46,6 +46,7 @@ def main ():
             data, addr = serverSock.recvfrom(1024) #Daten vom UDP Port empfangen
             timeStamp = str(datetime.now().time())
             aufnahmeZeit = zeitformat(timeStamp)
+            aufnahmeZeit = str(aufnahmeZeit)
             data = str(data)
             msg = {'Messwert': data, 'Zeit udp2mqtt' : aufnahmeZeit}
             dataToMQTT = json.dumps(msg)
