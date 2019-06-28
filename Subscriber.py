@@ -43,7 +43,7 @@ def on_message(client, userdata, msg):
     msg_in.update({'Subscriber Zeit' : timeStamp})
     starttime = str(msg_in['Zeit udp2mqtt'])
     
-    a = zeitformat(starttime)
+    a = zeitformat(msg_in['Zeit udp2mqtt'])
     
     print(a)
     
