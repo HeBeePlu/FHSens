@@ -38,6 +38,7 @@ def on_message(client, userdata, msg):
     msg_in = json.loads(msg.payload) #json daten entpacken
     timeStamp = str(datetime.now().time()) #zeitstempel einfuegen
     changeZeit = zeitformat(timeStamp) #Zeit formatieren
+    changeZeit = str(changeZeit)
     msg_in.update({'Topic Change' : changeZeit}) #neue Message an ein weiteres MQTT Topic erstellen
     dataToMQTT = json.dumps(msg_in) #als JSON verpacken
     #print(newMsg)

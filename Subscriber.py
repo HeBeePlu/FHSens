@@ -40,12 +40,10 @@ def zeitformat (zeit):
 def on_message(client, userdata, msg):
     msg_in = json.loads(msg.payload) #json daten entpacken
     timeStamp = str(datetime.now().time()) #zeitstempel einfuegen
+    timeStamp = zeitformat(timeStamp)
     msg_in.update({'Subscriber Zeit' : timeStamp})
-    starttime = str(msg_in['Zeit udp2mqtt'])
-    
-    a = zeitformat(msg_in['Zeit udp2mqtt'])
-    
-    print(a)
+        
+    print(msg_in)
     
 def main():
     try:
