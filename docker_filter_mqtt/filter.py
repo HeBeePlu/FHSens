@@ -26,6 +26,14 @@ service_ip = ipadress.get_ip()
 service_name = 'Filter Service'
 print ('Subscriber_Service IP: ', service_ip)
 
+def zeitformat (zeit):
+    zeitList = list()
+    for n in range(6, 14):
+        zeitList.append(zeit[n])
+    zeitString = ''.join(str(i) for i in zeitList)
+    return zeitString 
+
+
 trigger = 0
 print (trigger)
 #funktion zum auslesen des mqtt topics 'UDP-Sensor' und weiterleiten an neues Topic 'data-filter'
@@ -40,7 +48,8 @@ def on_message(client, userdata, msg):
     if (trigger != n):
         print ('Filter')
         timeStamp = str(datetime.now().time()) #zeitstempel einfuegen
-        msg_in.update({'Filter Zeit' : timeStamp}) #neue Message erstellen
+        filterZeit = zeitformat(timeStamp)
+        msg_in.update({'Filter Zeit' : filterZeit}) #neue Message erstellen
         
         dataFiltered = json.dumps(msg_in) #als JSON verpacken
         client.publish("UDP-Sensor/Filter", dataFiltered) # an das Topic senden

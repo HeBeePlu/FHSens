@@ -33,13 +33,21 @@ adress = str(ip)
 adressToMQTT=json.dumps(adress)
 serviceClient.publish("UDP-Sensor", adressToMQTT) #testweise senden der Container IP uber mqtt
 
+def zeitformat (zeit):
+    zeitList = list()
+    for n in range(6, 14):
+        zeitList.append(zeit[n])
+    zeitString = ''.join(str(i) for i in zeitList)
+    return zeitString 
+
 def main ():
     try:
         while True:
             data, addr = serverSock.recvfrom(1024) #Daten vom UDP Port empfangen
             timeStamp = str(datetime.now().time())
+            aufnahmeZeit = zeitformat(timeStamp)
             data = str(data)
-            msg = {'Messwert': data, 'Zeit udp2mqtt' : timeStamp}
+            msg = {'Messwert': data, 'Zeit udp2mqtt' : aufnahmeZeit}
             dataToMQTT = json.dumps(msg)
             serviceClient.publish("UDP-Sensor", dataToMQTT) #Daten im JSON Format an MQTT Topic senden
             print("Message: ", dataToMQTT)

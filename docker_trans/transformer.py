@@ -26,11 +26,19 @@ service_ip = ipadress.get_ip()
 service_name = 'Durchgangs Service'
 print ('Subscriber_Service IP: ', service_ip)
 
+def zeitformat (zeit):
+    zeitList = list()
+    for n in range(6, 14):
+        zeitList.append(zeit[n])
+    zeitString = ''.join(str(i) for i in zeitList)
+    return zeitString 
+
 #funktion zum auslesen des mqtt topics 'UDP-Sensor' und weiterleiten an neues Topic 'Data-Log'
 def on_message(client, userdata, msg):
     msg_in = json.loads(msg.payload) #json daten entpacken
     timeStamp = str(datetime.now().time()) #zeitstempel einfuegen
-    msg_in.update({'Topic Change' : timeStamp}) #neue Message an ein weiteres MQTT Topic erstellen
+    changeZeit = zeitformat(timeStamp) #Zeit formatieren
+    msg_in.update({'Topic Change' : changeZeit}) #neue Message an ein weiteres MQTT Topic erstellen
     dataToMQTT = json.dumps(msg_in) #als JSON verpacken
     #print(newMsg)
     client.publish("Data-Log", dataToMQTT) # an das Topic 'Data-Log' senden

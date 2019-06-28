@@ -1,103 +1,135 @@
-{u'Zeit udp2mqtt': u'13:07:37.621581', u'Transformer Zeit': u'13:07:37.624614', 'Log Zeit': '15:07:37.687772', u'Messwert': u"b'219'"}
-{u'Zeit udp2mqtt': u'13:07:37.634909', u'Transformer Zeit': u'13:07:37.638009', 'Log Zeit': '15:07:37.690210', u'Messwert': u"b'220'"}
-{u'Zeit udp2mqtt': u'13:07:37.647403', u'Transformer Zeit': u'13:07:37.651193', 'Log Zeit': '15:07:37.692179', u'Messwert': u"b'221'"}
-{u'Zeit udp2mqtt': u'13:07:37.659913', u'Transformer Zeit': u'13:07:37.662915', 'Log Zeit': '15:07:37.694167', u'Messwert': u"b'222'"}
-{u'Zeit udp2mqtt': u'13:07:37.672497', u'Transformer Zeit': u'13:07:37.676089', 'Log Zeit': '15:07:37.696077', u'Messwert': u"b'223'"}
-{u'Zeit udp2mqtt': u'13:07:37.687186', u'Transformer Zeit': u'13:07:37.692239', 'Log Zeit': '15:07:37.705732', u'Messwert': u"b'224'"}
-{u'Zeit udp2mqtt': u'13:07:37.700052', u'Transformer Zeit': u'13:07:37.705624', 'Log Zeit': '15:07:37.717376', u'Messwert': u"b'225'"}
-{u'Zeit udp2mqtt': u'13:07:37.712615', u'Transformer Zeit': u'13:07:37.717222', 'Log Zeit': '15:07:37.731415', u'Messwert': u"b'226'"}
-{u'Zeit udp2mqtt': u'13:07:37.725195', u'Transformer Zeit': u'13:07:37.728326', 'Log Zeit': '15:07:37.742695', u'Messwert': u"b'227'"}
-{u'Zeit udp2mqtt': u'13:07:37.738419', u'Transformer Zeit': u'13:07:37.745166', 'Log Zeit': '15:07:37.755801', u'Messwert': u"b'228'"}
-{u'Zeit udp2mqtt': u'13:07:37.750970', u'Transformer Zeit': u'13:07:37.755487', 'Log Zeit': '15:07:37.767248', u'Messwert': u"b'229'"}
-{u'Zeit udp2mqtt': u'13:07:37.763413', u'Transformer Zeit': u'13:07:37.766882', 'Log Zeit': '15:07:37.781991', u'Messwert': u"b'230'"}
-{u'Zeit udp2mqtt': u'13:07:37.777323', u'Transformer Zeit': u'13:07:37.781611', 'Log Zeit': '15:07:37.795195', u'Messwert': u"b'231'"}
-{u'Zeit udp2mqtt': u'13:07:37.791382', u'Transformer Zeit': u'13:07:37.794631', 'Log Zeit': '15:07:37.810327', u'Messwert': u"b'232'"}
-{u'Zeit udp2mqtt': u'13:07:37.805506', u'Transformer Zeit': u'13:07:37.809984', 'Log Zeit': '15:07:37.824010', u'Messwert': u"b'233'"}
-{u'Zeit udp2mqtt': u'13:07:37.820106', u'Transformer Zeit': u'13:07:37.823643', 'Log Zeit': '15:07:37.839081', u'Messwert': u"b'234'"}
-{u'Zeit udp2mqtt': u'13:07:37.834185', u'Transformer Zeit': u'13:07:37.838709', 'Log Zeit': '15:07:37.851922', u'Messwert': u"b'235'"}
-{u'Zeit udp2mqtt': u'13:07:37.846831', u'Transformer Zeit': u'13:07:37.851519', 'Log Zeit': '15:07:37.865393', u'Messwert': u"b'236'"}
-{u'Zeit udp2mqtt': u'13:07:37.859411', u'Transformer Zeit': u'13:07:37.864645', 'Log Zeit': '15:07:37.877169', u'Messwert': u"b'237'"}
-{u'Zeit udp2mqtt': u'13:07:37.871982', u'Transformer Zeit': u'13:07:37.876598', 'Log Zeit': '15:07:37.888392', u'Messwert': u"b'238'"}
-{u'Zeit udp2mqtt': u'13:07:37.884488', u'Transformer Zeit': u'13:07:37.888004', 'Log Zeit': '15:07:37.901998', u'Messwert': u"b'239'"}
-{u'Zeit udp2mqtt': u'13:07:37.897131', u'Transformer Zeit': u'13:07:37.901075', 'Log Zeit': '15:07:37.919015', u'Messwert': u"b'240'"}
-{u'Zeit udp2mqtt': u'13:07:37.909756', u'Transformer Zeit': u'13:07:37.919092', 'Log Zeit': '15:07:37.928558', u'Messwert': u"b'241'"}
-{u'Zeit udp2mqtt': u'13:07:37.922317', u'Transformer Zeit': u'13:07:37.928479', 'Log Zeit': '15:07:37.939341', u'Messwert': u"b'242'"}
-{u'Zeit udp2mqtt': u'13:07:37.935123', u'Transformer Zeit': u'13:07:37.939123', 'Log Zeit': '15:07:37.951584', u'Messwert': u"b'243'"}
-{u'Zeit udp2mqtt': u'13:07:37.947506', u'Transformer Zeit': u'13:07:37.951584', 'Log Zeit': '15:07:37.963666', u'Messwert': u"b'244'"}
-{u'Zeit udp2mqtt': u'13:07:37.960200', u'Transformer Zeit': u'13:07:37.963422', 'Log Zeit': '15:07:37.977501', u'Messwert': u"b'245'"}
-{u'Zeit udp2mqtt': u'13:07:37.972993', u'Transformer Zeit': u'13:07:37.977053', 'Log Zeit': '15:07:37.990179', u'Messwert': u"b'246'"}
-{u'Zeit udp2mqtt': u'13:07:37.985900', u'Transformer Zeit': u'13:07:37.990006', 'Log Zeit': '15:07:38.003080', u'Messwert': u"b'247'"}
-{u'Zeit udp2mqtt': u'13:07:37.998454', u'Transformer Zeit': u'13:07:38.002878', 'Log Zeit': '15:07:38.016395', u'Messwert': u"b'248'"}
-{u'Zeit udp2mqtt': u'13:07:38.010752', u'Transformer Zeit': u'13:07:38.016250', 'Log Zeit': '15:07:38.029414', u'Messwert': u"b'249'"}
-{u'Zeit udp2mqtt': u'13:07:38.025614', u'Transformer Zeit': u'13:07:38.029212', 'Log Zeit': '15:07:38.041801', u'Messwert': u"b'250'"}
-{u'Zeit udp2mqtt': u'13:07:38.038228', u'Transformer Zeit': u'13:07:38.041578', 'Log Zeit': '15:07:38.055091', u'Messwert': u"b'251'"}
-{u'Zeit udp2mqtt': u'13:07:38.051007', u'Transformer Zeit': u'13:07:38.054530', 'Log Zeit': '15:07:38.069997', u'Messwert': u"b'252'"}
-{u'Zeit udp2mqtt': u'13:07:38.065605', u'Transformer Zeit': u'13:07:38.069936', 'Log Zeit': '15:07:38.084078', u'Messwert': u"b'253'"}
-{u'Zeit udp2mqtt': u'13:07:38.080349', u'Transformer Zeit': u'13:07:38.083762', 'Log Zeit': '15:07:38.099168', u'Messwert': u"b'254'"}
-{u'Zeit udp2mqtt': u'13:07:38.094521', u'Transformer Zeit': u'13:07:38.099123', 'Log Zeit': '15:07:38.116705', u'Messwert': u"b'255'"}
-{u'Zeit udp2mqtt': u'13:07:38.109789', u'Transformer Zeit': u'13:07:38.112781', 'Log Zeit': '15:07:38.130159', u'Messwert': u"b'256'"}
-{u'Zeit udp2mqtt': u'13:07:38.123914', u'Transformer Zeit': u'13:07:38.127539', 'Log Zeit': '15:07:38.143381', u'Messwert': u"b'255'"}
-{u'Zeit udp2mqtt': u'13:07:38.138633', u'Transformer Zeit': u'13:07:38.142953', 'Log Zeit': '15:07:38.158098', u'Messwert': u"b'254'"}
-{u'Zeit udp2mqtt': u'13:07:38.153608', u'Transformer Zeit': u'13:07:38.157740', 'Log Zeit': '15:07:38.173744', u'Messwert': u"b'253'"}
-{u'Zeit udp2mqtt': u'13:07:38.168303', u'Transformer Zeit': u'13:07:38.172970', 'Log Zeit': '15:07:38.188219', u'Messwert': u"b'252'"}
-{u'Zeit udp2mqtt': u'13:07:38.182867', u'Transformer Zeit': u'13:07:38.186656', 'Log Zeit': '15:07:38.210098', u'Messwert': u"b'251'"}
-{u'Zeit udp2mqtt': u'13:07:38.205812', u'Transformer Zeit': u'13:07:38.209595', 'Log Zeit': '15:07:38.223865', u'Messwert': u"b'250'"}
-{u'Zeit udp2mqtt': u'13:07:38.219940', u'Transformer Zeit': u'13:07:38.223476', 'Log Zeit': '15:07:38.238974', u'Messwert': u"b'249'"}
-{u'Zeit udp2mqtt': u'13:07:38.234440', u'Transformer Zeit': u'13:07:38.238392', 'Log Zeit': '15:07:38.253693', u'Messwert': u"b'248'"}
-{u'Zeit udp2mqtt': u'13:07:38.249374', u'Transformer Zeit': u'13:07:38.253087', 'Log Zeit': '15:07:38.269323', u'Messwert': u"b'247'"}
-{u'Zeit udp2mqtt': u'13:07:38.264128', u'Transformer Zeit': u'13:07:38.268632', 'Log Zeit': '15:07:38.284347', u'Messwert': u"b'246'"}
-{u'Zeit udp2mqtt': u'13:07:38.280461', u'Transformer Zeit': u'13:07:38.283819', 'Log Zeit': '15:07:38.300848', u'Messwert': u"b'245'"}
-{u'Zeit udp2mqtt': u'13:07:38.295847', u'Transformer Zeit': u'13:07:38.300100', 'Log Zeit': '15:07:38.316466', u'Messwert': u"b'244'"}
-{u'Zeit udp2mqtt': u'13:07:38.311861', u'Transformer Zeit': u'13:07:38.315903', 'Log Zeit': '15:07:38.330220', u'Messwert': u"b'243'"}
-{u'Zeit udp2mqtt': u'13:07:38.325771', u'Transformer Zeit': u'13:07:38.329508', 'Log Zeit': '15:07:38.343673', u'Messwert': u"b'242'"}
-{u'Zeit udp2mqtt': u'13:07:38.338353', u'Transformer Zeit': u'13:07:38.343237', 'Log Zeit': '15:07:38.363566', u'Messwert': u"b'241'"}
-{u'Zeit udp2mqtt': u'13:07:38.351124', u'Transformer Zeit': u'13:07:38.360254', 'Log Zeit': '15:07:38.367522', u'Messwert': u"b'240'"}
-{u'Zeit udp2mqtt': u'13:07:38.363512', u'Transformer Zeit': u'13:07:38.369497', 'Log Zeit': '15:07:38.385205', u'Messwert': u"b'239'"}
-{u'Zeit udp2mqtt': u'13:07:38.377624', u'Transformer Zeit': u'13:07:38.384618', 'Log Zeit': '15:07:38.395426', u'Messwert': u"b'238'"}
-{u'Zeit udp2mqtt': u'13:07:38.391824', u'Transformer Zeit': u'13:07:38.395042', 'Log Zeit': '15:07:38.412264', u'Messwert': u"b'237'"}
-{u'Zeit udp2mqtt': u'13:07:38.404614', u'Transformer Zeit': u'13:07:38.411960', 'Log Zeit': '15:07:38.421751', u'Messwert': u"b'236'"}
-{u'Zeit udp2mqtt': u'13:07:38.417725', u'Transformer Zeit': u'13:07:38.421361', 'Log Zeit': '15:07:38.435610', u'Messwert': u"b'235'"}
-{u'Zeit udp2mqtt': u'13:07:38.430297', u'Transformer Zeit': u'13:07:38.434912', 'Log Zeit': '15:07:38.449164', u'Messwert': u"b'234'"}
-{u'Zeit udp2mqtt': u'13:07:38.442834', u'Transformer Zeit': u'13:07:38.448297', 'Log Zeit': '15:07:38.460977', u'Messwert': u"b'233'"}
-{u'Zeit udp2mqtt': u'13:07:38.455537', u'Transformer Zeit': u'13:07:38.460480', 'Log Zeit': '15:07:38.473443', u'Messwert': u"b'232'"}
-{u'Zeit udp2mqtt': u'13:07:38.468423', u'Transformer Zeit': u'13:07:38.472970', 'Log Zeit': '15:07:38.486985', u'Messwert': u"b'231'"}
-{u'Zeit udp2mqtt': u'13:07:38.481595', u'Transformer Zeit': u'13:07:38.486542', 'Log Zeit': '15:07:38.499365', u'Messwert': u"b'230'"}
-{u'Zeit udp2mqtt': u'13:07:38.494021', u'Transformer Zeit': u'13:07:38.498901', 'Log Zeit': '15:07:38.512600', u'Messwert': u"b'229'"}
-{u'Zeit udp2mqtt': u'13:07:38.506604', u'Transformer Zeit': u'13:07:38.512150', 'Log Zeit': '15:07:38.523989', u'Messwert': u"b'228'"}
-{u'Zeit udp2mqtt': u'13:07:38.519260', u'Transformer Zeit': u'13:07:38.523492', 'Log Zeit': '15:07:38.538346', u'Messwert': u"b'227'"}
-{u'Zeit udp2mqtt': u'13:07:38.531707', u'Transformer Zeit': u'13:07:38.535205', 'Log Zeit': '15:07:38.549312', u'Messwert': u"b'226'"}
-{u'Zeit udp2mqtt': u'13:07:38.544327', u'Transformer Zeit': u'13:07:38.551463', 'Log Zeit': '15:07:38.562004', u'Messwert': u"b'225'"}
-{u'Zeit udp2mqtt': u'13:07:38.557100', u'Transformer Zeit': u'13:07:38.561719', 'Log Zeit': '15:07:38.576106', u'Messwert': u"b'224'"}
-{u'Zeit udp2mqtt': u'13:07:38.569873', u'Transformer Zeit': u'13:07:38.575695', 'Log Zeit': '15:07:38.587439', u'Messwert': u"b'223'"}
-{u'Zeit udp2mqtt': u'13:07:38.582529', u'Transformer Zeit': u'13:07:38.586810', 'Log Zeit': '15:07:38.598862', u'Messwert': u"b'222'"}
-{u'Zeit udp2mqtt': u'13:07:38.595016', u'Transformer Zeit': u'13:07:38.598409', 'Log Zeit': '15:07:38.612564', u'Messwert': u"b'221'"}
-{u'Zeit udp2mqtt': u'13:07:38.607683', u'Transformer Zeit': u'13:07:38.612038', 'Log Zeit': '15:07:38.626112', u'Messwert': u"b'220'"}
-{u'Zeit udp2mqtt': u'13:07:38.622126', u'Transformer Zeit': u'13:07:38.625676', 'Log Zeit': '15:07:38.641336', u'Messwert': u"b'219'"}
-{u'Zeit udp2mqtt': u'13:07:38.636215', u'Transformer Zeit': u'13:07:38.640737', 'Log Zeit': '15:07:38.655506', u'Messwert': u"b'218'"}
-{u'Zeit udp2mqtt': u'13:07:38.650913', u'Transformer Zeit': u'13:07:38.655058', 'Log Zeit': '15:07:38.671371', u'Messwert': u"b'217'"}
-{u'Zeit udp2mqtt': u'13:07:38.665596', u'Transformer Zeit': u'13:07:38.670908', 'Log Zeit': '15:07:38.686188', u'Messwert': u"b'216'"}
-{u'Zeit udp2mqtt': u'13:07:38.682210', u'Transformer Zeit': u'13:07:38.685719', 'Log Zeit': '15:07:38.700986', u'Messwert': u"b'215'"}
-{u'Zeit udp2mqtt': u'13:07:38.695723', u'Transformer Zeit': u'13:07:38.700430', 'Log Zeit': '15:07:38.713322', u'Messwert': u"b'214'"}
-{u'Zeit udp2mqtt': u'13:07:38.708204', u'Transformer Zeit': u'13:07:38.712581', 'Log Zeit': '15:07:38.727056', u'Messwert': u"b'213'"}
-{u'Zeit udp2mqtt': u'13:07:38.720702', u'Transformer Zeit': u'13:07:38.726431', 'Log Zeit': '15:07:38.738356', u'Messwert': u"b'212'"}
-{u'Zeit udp2mqtt': u'13:07:38.733307', u'Transformer Zeit': u'13:07:38.737629', 'Log Zeit': '15:07:38.749659', u'Messwert': u"b'211'"}
-{u'Zeit udp2mqtt': u'13:07:38.745758', u'Transformer Zeit': u'13:07:38.749189', 'Log Zeit': '15:07:38.767387', u'Messwert': u"b'210'"}
-{u'Zeit udp2mqtt': u'13:07:38.758880', u'Transformer Zeit': u'13:07:38.767339', 'Log Zeit': '15:07:38.776487', u'Messwert': u"b'209'"}
-{u'Zeit udp2mqtt': u'13:07:38.771388', u'Transformer Zeit': u'13:07:38.775349', 'Log Zeit': '15:07:38.797739', u'Messwert': u"b'208'"}
-{u'Zeit udp2mqtt': u'13:07:38.783970', u'Transformer Zeit': u'13:07:38.797416', 'Log Zeit': '15:07:38.803601', u'Messwert': u"b'207'"}
-{u'Zeit udp2mqtt': u'13:07:38.800054', u'Transformer Zeit': u'13:07:38.803246', 'Log Zeit': '15:07:38.812794', u'Messwert': u"b'206'"}
-{u'Zeit udp2mqtt': u'13:07:38.809245', u'Transformer Zeit': u'13:07:38.812491', 'Log Zeit': '15:07:38.827479', u'Messwert': u"b'205'"}
-{u'Zeit udp2mqtt': u'13:07:38.822437', u'Transformer Zeit': u'13:07:38.827154', 'Log Zeit': '15:07:38.838477', u'Messwert': u"b'204'"}
-{u'Zeit udp2mqtt': u'13:07:38.834503', u'Transformer Zeit': u'13:07:38.837991', 'Log Zeit': '15:07:38.851949', u'Messwert': u"b'203'"}
-{u'Zeit udp2mqtt': u'13:07:38.847232', u'Transformer Zeit': u'13:07:38.851571', 'Log Zeit': '15:07:38.863296', u'Messwert': u"b'202'"}
-{u'Zeit udp2mqtt': u'13:07:38.859861', u'Transformer Zeit': u'13:07:38.862943', 'Log Zeit': '15:07:38.878147', u'Messwert': u"b'201'"}
-{u'Zeit udp2mqtt': u'13:07:38.874878', u'Transformer Zeit': u'13:07:38.877864', 'Log Zeit': '15:07:38.889422', u'Messwert': u"b'200'"}
-{u'Zeit udp2mqtt': u'13:07:38.885497', u'Transformer Zeit': u'13:07:38.889039', 'Log Zeit': '15:07:38.902764', u'Messwert': u"b'199'"}
-{u'Zeit udp2mqtt': u'13:07:38.898171', u'Transformer Zeit': u'13:07:38.902193', 'Log Zeit': '15:07:38.915684', u'Messwert': u"b'198'"}
-{u'Zeit udp2mqtt': u'13:07:38.910769', u'Transformer Zeit': u'13:07:38.915342', 'Log Zeit': '15:07:38.929691', u'Messwert': u"b'197'"}
-{u'Zeit udp2mqtt': u'13:07:38.923423', u'Transformer Zeit': u'13:07:38.929234', 'Log Zeit': '15:07:38.939467', u'Messwert': u"b'196'"}
-{u'Zeit udp2mqtt': u'13:07:38.935842', u'Transformer Zeit': u'13:07:38.939087', 'Log Zeit': '15:07:38.952266', u'Messwert': u"b'195'"}
-{u'Zeit udp2mqtt': u'13:07:38.948605', u'Transformer Zeit': u'13:07:38.951866', 'Log Zeit': '15:07:38.965905', u'Messwert': u"b'194'"}
-{u'Zeit udp2mqtt': u'13:07:38.961210', u'Transformer Zeit': u'13:07:38.964966', 'Log Zeit': '15:07:38.980941', u'Messwert': u"b'193'"}
-{u'Zeit udp2mqtt': u'13:07:38.973949', u'Transformer Zeit': u'13:07:38.980572', 'Log Zeit': '15:07:38.990215', u'Messwert': u"b'192'"}
-{u'Zeit udp2mqtt': u'13:07:38.986503', u'Transformer Zeit': u'13:07:38.989815', 'Log Zeit': '15:07:39.003261', u'Messwert': u"b'191'"}
+{'Endzeit': '25.34829', 'Log Zeit': '14:17:25.348299', 'Startzeit': '25.27876', u'Zeit udp2mqtt': u'12:17:25.278760', u'Topic Change': u'12:17:25.281619', u'Messwert': u"b'47'"}
+{'Endzeit': '25.35044', 'Log Zeit': '14:17:25.350443', 'Startzeit': '25.29106', u'Zeit udp2mqtt': u'12:17:25.291061', u'Topic Change': u'12:17:25.297481', u'Messwert': u"b'46'"}
+{'Endzeit': '25.35352', 'Log Zeit': '14:17:25.353521', 'Startzeit': '25.30367', u'Zeit udp2mqtt': u'12:17:25.303674', u'Topic Change': u'12:17:25.307321', u'Messwert': u"b'45'"}
+{'Endzeit': '25.35560', 'Log Zeit': '14:17:25.355607', 'Startzeit': '25.31617', u'Zeit udp2mqtt': u'12:17:25.316171', u'Topic Change': u'12:17:25.319708', u'Messwert': u"b'44'"}
+{'Endzeit': '25.35809', 'Log Zeit': '14:17:25.358094', 'Startzeit': '25.33553', u'Zeit udp2mqtt': u'12:17:25.335534', u'Topic Change': u'12:17:25.339044', u'Messwert': u"b'43'"}
+{'Endzeit': '25.36428', 'Log Zeit': '14:17:25.364285', 'Startzeit': '25.34906', u'Zeit udp2mqtt': u'12:17:25.349067', u'Topic Change': u'12:17:25.352547', u'Messwert': u"b'42'"}
+{'Endzeit': '25.37608', 'Log Zeit': '14:17:25.376080', 'Startzeit': '25.36058', u'Zeit udp2mqtt': u'12:17:25.360585', u'Topic Change': u'12:17:25.364192', u'Messwert': u"b'41'"}
+{'Endzeit': '25.38885', 'Log Zeit': '14:17:25.388855', 'Startzeit': '25.37298', u'Zeit udp2mqtt': u'12:17:25.372980', u'Topic Change': u'12:17:25.375995', u'Messwert': u"b'40'"}
+{'Endzeit': '25.40179', 'Log Zeit': '14:17:25.401795', 'Startzeit': '25.38545', u'Zeit udp2mqtt': u'12:17:25.385458', u'Topic Change': u'12:17:25.388548', u'Messwert': u"b'39'"}
+{'Endzeit': '25.41363', 'Log Zeit': '14:17:25.413637', 'Startzeit': '25.39801', u'Zeit udp2mqtt': u'12:17:25.398015', u'Topic Change': u'12:17:25.401332', u'Messwert': u"b'38'"}
+{'Endzeit': '25.42757', 'Log Zeit': '14:17:25.427579', 'Startzeit': '25.41046', u'Zeit udp2mqtt': u'12:17:25.410460', u'Topic Change': u'12:17:25.413113', u'Messwert': u"b'37'"}
+{'Endzeit': '25.43929', 'Log Zeit': '14:17:25.439298', 'Startzeit': '25.42334', u'Zeit udp2mqtt': u'12:17:25.423349', u'Topic Change': u'12:17:25.427086', u'Messwert': u"b'36'"}
+{'Endzeit': '25.45145', 'Log Zeit': '14:17:25.451454', 'Startzeit': '25.43579', u'Zeit udp2mqtt': u'12:17:25.435790', u'Topic Change': u'12:17:25.438658', u'Messwert': u"b'35'"}
+{'Endzeit': '25.46470', 'Log Zeit': '14:17:25.464703', 'Startzeit': '25.44818', u'Zeit udp2mqtt': u'12:17:25.448180', u'Topic Change': u'12:17:25.450855', u'Messwert': u"b'34'"}
+{'Endzeit': '25.47662', 'Log Zeit': '14:17:25.476620', 'Startzeit': '25.46089', u'Zeit udp2mqtt': u'12:17:25.460894', u'Topic Change': u'12:17:25.464252', u'Messwert': u"b'33'"}
+{'Endzeit': '25.49025', 'Log Zeit': '14:17:25.490250', 'Startzeit': '25.47325', u'Zeit udp2mqtt': u'12:17:25.473251', u'Topic Change': u'12:17:25.475898', u'Messwert': u"b'32'"}
+{'Endzeit': '25.50149', 'Log Zeit': '14:17:25.501490', 'Startzeit': '25.48602', u'Zeit udp2mqtt': u'12:17:25.486024', u'Topic Change': u'12:17:25.489710', u'Messwert': u"b'31'"}
+{'Endzeit': '25.51426', 'Log Zeit': '14:17:25.514268', 'Startzeit': '25.49838', u'Zeit udp2mqtt': u'12:17:25.498384', u'Topic Change': u'12:17:25.500972', u'Messwert': u"b'30'"}
+{'Endzeit': '25.52804', 'Log Zeit': '14:17:25.528049', 'Startzeit': '25.51093', u'Zeit udp2mqtt': u'12:17:25.510934', u'Topic Change': u'12:17:25.513798', u'Messwert': u"b'29'"}
+{'Endzeit': '25.53951', 'Log Zeit': '14:17:25.539517', 'Startzeit': '25.52367', u'Zeit udp2mqtt': u'12:17:25.523672', u'Topic Change': u'12:17:25.527396', u'Messwert': u"b'28'"}
+{'Endzeit': '25.55292', 'Log Zeit': '14:17:25.552924', 'Startzeit': '25.53603', u'Zeit udp2mqtt': u'12:17:25.536030', u'Topic Change': u'12:17:25.538850', u'Messwert': u"b'27'"}
+{'Endzeit': '25.56413', 'Log Zeit': '14:17:25.564139', 'Startzeit': '25.54861', u'Zeit udp2mqtt': u'12:17:25.548615', u'Topic Change': u'12:17:25.552075', u'Messwert': u"b'26'"}
+{'Endzeit': '25.57853', 'Log Zeit': '14:17:25.578532', 'Startzeit': '25.56102', u'Zeit udp2mqtt': u'12:17:25.561028', u'Topic Change': u'12:17:25.563670', u'Messwert': u"b'25'"}
+{'Endzeit': '25.59083', 'Log Zeit': '14:17:25.590833', 'Startzeit': '25.57353', u'Zeit udp2mqtt': u'12:17:25.573539', u'Topic Change': u'12:17:25.577618', u'Messwert': u"b'24'"}
+{'Endzeit': '25.60189', 'Log Zeit': '14:17:25.601894', 'Startzeit': '25.58616', u'Zeit udp2mqtt': u'12:17:25.586163', u'Topic Change': u'12:17:25.589905', u'Messwert': u"b'23'"}
+{'Endzeit': '25.61560', 'Log Zeit': '14:17:25.615605', 'Startzeit': '25.59844', u'Zeit udp2mqtt': u'12:17:25.598448', u'Topic Change': u'12:17:25.601066', u'Messwert': u"b'22'"}
+{'Endzeit': '25.62718', 'Log Zeit': '14:17:25.627184', 'Startzeit': '25.61136', u'Zeit udp2mqtt': u'12:17:25.611363', u'Topic Change': u'12:17:25.614994', u'Messwert': u"b'21'"}
+{'Endzeit': '25.64166', 'Log Zeit': '14:17:25.641668', 'Startzeit': '25.62379', u'Zeit udp2mqtt': u'12:17:25.623797', u'Topic Change': u'12:17:25.626582', u'Messwert': u"b'20'"}
+{'Endzeit': '25.65325', 'Log Zeit': '14:17:25.653254', 'Startzeit': '25.63645', u'Zeit udp2mqtt': u'12:17:25.636453', u'Topic Change': u'12:17:25.640911', u'Messwert': u"b'19'"}
+{'Endzeit': '25.66484', 'Log Zeit': '14:17:25.664849', 'Startzeit': '25.64889', u'Zeit udp2mqtt': u'12:17:25.648899', u'Topic Change': u'12:17:25.652553', u'Messwert': u"b'18'"}
+{'Endzeit': '25.67824', 'Log Zeit': '14:17:25.678249', 'Startzeit': '25.66141', u'Zeit udp2mqtt': u'12:17:25.661410', u'Topic Change': u'12:17:25.664308', u'Messwert': u"b'17'"}
+{'Endzeit': '25.68977', 'Log Zeit': '14:17:25.689771', 'Startzeit': '25.67409', u'Zeit udp2mqtt': u'12:17:25.674094', u'Topic Change': u'12:17:25.677648', u'Messwert': u"b'16'"}
+{'Endzeit': '25.70501', 'Log Zeit': '14:17:25.705013', 'Startzeit': '25.68657', u'Zeit udp2mqtt': u'12:17:25.686578', u'Topic Change': u'12:17:25.689288', u'Messwert': u"b'15'"}
+{'Endzeit': '25.71785', 'Log Zeit': '14:17:25.717855', 'Startzeit': '25.69924', u'Zeit udp2mqtt': u'12:17:25.699248', u'Topic Change': u'12:17:25.704447', u'Messwert': u"b'14'"}
+{'Endzeit': '25.72774', 'Log Zeit': '14:17:25.727748', 'Startzeit': '25.71184', u'Zeit udp2mqtt': u'12:17:25.711841', u'Topic Change': u'12:17:25.716032', u'Messwert': u"b'13'"}
+{'Endzeit': '25.74078', 'Log Zeit': '14:17:25.740785', 'Startzeit': '25.72425', u'Zeit udp2mqtt': u'12:17:25.724254', u'Topic Change': u'12:17:25.727189', u'Messwert': u"b'12'"}
+{'Endzeit': '25.75266', 'Log Zeit': '14:17:25.752660', 'Startzeit': '25.73702', u'Zeit udp2mqtt': u'12:17:25.737023', u'Topic Change': u'12:17:25.740183', u'Messwert': u"b'11'"}
+{'Endzeit': '25.76976', 'Log Zeit': '14:17:25.769760', 'Startzeit': '25.74947', u'Zeit udp2mqtt': u'12:17:25.749473', u'Topic Change': u'12:17:25.752252', u'Messwert': u"b'10'"}
+{'Endzeit': '25.78128', 'Log Zeit': '14:17:25.781289', 'Startzeit': '25.76244', u'Zeit udp2mqtt': u'12:17:25.762446', u'Topic Change': u'12:17:25.765492', u'Messwert': u"b'9'"}
+{'Endzeit': '25.79558', 'Log Zeit': '14:17:25.795585', 'Startzeit': '25.77528', u'Zeit udp2mqtt': u'12:17:25.775287', u'Topic Change': u'12:17:25.778403', u'Messwert': u"b'8'"}
+{'Endzeit': '25.80651', 'Log Zeit': '14:17:25.806517', 'Startzeit': '25.78765', u'Zeit udp2mqtt': u'12:17:25.787650', u'Topic Change': u'12:17:25.791073', u'Messwert': u"b'7'"}
+{'Endzeit': '25.81727', 'Log Zeit': '14:17:25.817273', 'Startzeit': '25.80028', u'Zeit udp2mqtt': u'12:17:25.800288', u'Topic Change': u'12:17:25.804117', u'Messwert': u"b'6'"}
+{'Endzeit': '25.82953', 'Log Zeit': '14:17:25.829538', 'Startzeit': '25.81268', u'Zeit udp2mqtt': u'12:17:25.812689', u'Topic Change': u'12:17:25.817214', u'Messwert': u"b'5'"}
+{'Endzeit': '25.84193', 'Log Zeit': '14:17:25.841932', 'Startzeit': '25.82538', u'Zeit udp2mqtt': u'12:17:25.825385', u'Topic Change': u'12:17:25.829393', u'Messwert': u"b'4'"}
+{'Endzeit': '25.85527', 'Log Zeit': '14:17:25.855273', 'Startzeit': '25.83821', u'Zeit udp2mqtt': u'12:17:25.838212', u'Topic Change': u'12:17:25.843644', u'Messwert': u"b'3'"}
+{'Endzeit': '25.86702', 'Log Zeit': '14:17:25.867029', 'Startzeit': '25.85056', u'Zeit udp2mqtt': u'12:17:25.850568', u'Topic Change': u'12:17:25.856482', u'Messwert': u"b'2'"}
+{'Endzeit': '25.87914', 'Log Zeit': '14:17:25.879141', 'Startzeit': '25.86334', u'Zeit udp2mqtt': u'12:17:25.863341', u'Topic Change': u'12:17:25.867913', u'Messwert': u"b'1'"}
+{'Endzeit': '25.89227', 'Log Zeit': '14:17:25.892279', 'Startzeit': '25.87581', u'Zeit udp2mqtt': u'12:17:25.875811', u'Topic Change': u'12:17:25.879888', u'Messwert': u"b'0'"}
+{'Endzeit': '25.90386', 'Log Zeit': '14:17:25.903862', 'Startzeit': '25.88852', u'Zeit udp2mqtt': u'12:17:25.888526', u'Topic Change': u'12:17:25.893240', u'Messwert': u"b'1'"}
+{'Endzeit': '25.91762', 'Log Zeit': '14:17:25.917628', 'Startzeit': '25.90095', u'Zeit udp2mqtt': u'12:17:25.900954', u'Topic Change': u'12:17:25.904428', u'Messwert': u"b'2'"}
+{'Endzeit': '25.93064', 'Log Zeit': '14:17:25.930648', 'Startzeit': '25.91407', u'Zeit udp2mqtt': u'12:17:25.914077', u'Topic Change': u'12:17:25.918544', u'Messwert': u"b'3'"}
+{'Endzeit': '25.94295', 'Log Zeit': '14:17:25.942951', 'Startzeit': '25.92695', u'Zeit udp2mqtt': u'12:17:25.926954', u'Topic Change': u'12:17:25.931070', u'Messwert': u"b'4'"}
+{'Endzeit': '25.96015', 'Log Zeit': '14:17:25.960151', 'Startzeit': '25.93931', u'Zeit udp2mqtt': u'12:17:25.939317', u'Topic Change': u'12:17:25.943722', u'Messwert': u"b'5'"}
+{'Endzeit': '25.96805', 'Log Zeit': '14:17:25.968056', 'Startzeit': '25.95206', u'Zeit udp2mqtt': u'12:17:25.952061', u'Topic Change': u'12:17:25.959901', u'Messwert': u"b'6'"}
+{'Endzeit': '25.98153', 'Log Zeit': '14:17:25.981530', 'Startzeit': '25.96434', u'Zeit udp2mqtt': u'12:17:25.964346', u'Topic Change': u'12:17:25.967471', u'Messwert': u"b'7'"}
+{'Endzeit': '25.99312', 'Log Zeit': '14:17:25.993121', 'Startzeit': '25.97720', u'Zeit udp2mqtt': u'12:17:25.977200', u'Topic Change': u'12:17:25.983911', u'Messwert': u"b'8'"}
+{'Endzeit': '26.00783', 'Log Zeit': '14:17:26.007839', 'Startzeit': '25.98958', u'Zeit udp2mqtt': u'12:17:25.989580', u'Topic Change': u'12:17:25.992700', u'Messwert': u"b'9'"}
+{'Endzeit': '26.01976', 'Log Zeit': '14:17:26.019760', 'Startzeit': '26.00206', u'Zeit udp2mqtt': u'12:17:26.002065', u'Topic Change': u'12:17:26.007077', u'Messwert': u"b'10'"}
+{'Endzeit': '26.03050', 'Log Zeit': '14:17:26.030506', 'Startzeit': '26.01458', u'Zeit udp2mqtt': u'12:17:26.014581', u'Topic Change': u'12:17:26.019266', u'Messwert': u"b'11'"}
+{'Endzeit': '26.04490', 'Log Zeit': '14:17:26.044902', 'Startzeit': '26.02701', u'Zeit udp2mqtt': u'12:17:26.027014', u'Topic Change': u'12:17:26.030110', u'Messwert': u"b'12'"}
+{'Endzeit': '26.05597', 'Log Zeit': '14:17:26.055973', 'Startzeit': '26.03970', u'Zeit udp2mqtt': u'12:17:26.039701', u'Topic Change': u'12:17:26.044382', u'Messwert': u"b'13'"}
+{'Endzeit': '26.06843', 'Log Zeit': '14:17:26.068435', 'Startzeit': '26.05220', u'Zeit udp2mqtt': u'12:17:26.052207', u'Topic Change': u'12:17:26.055527', u'Messwert': u"b'14'"}
+{'Endzeit': '26.08182', 'Log Zeit': '14:17:26.081822', 'Startzeit': '26.06461', u'Zeit udp2mqtt': u'12:17:26.064619', u'Topic Change': u'12:17:26.068002', u'Messwert': u"b'15'"}
+{'Endzeit': '26.09314', 'Log Zeit': '14:17:26.093142', 'Startzeit': '26.07721', u'Zeit udp2mqtt': u'12:17:26.077212', u'Topic Change': u'12:17:26.081400', u'Messwert': u"b'16'"}
+{'Endzeit': '26.10730', 'Log Zeit': '14:17:26.107309', 'Startzeit': '26.08962', u'Zeit udp2mqtt': u'12:17:26.089621', u'Topic Change': u'12:17:26.092684', u'Messwert': u"b'17'"}
+{'Endzeit': '26.11830', 'Log Zeit': '14:17:26.118305', 'Startzeit': '26.10228', u'Zeit udp2mqtt': u'12:17:26.102282', u'Topic Change': u'12:17:26.106706', u'Messwert': u"b'18'"}
+{'Endzeit': '26.13180', 'Log Zeit': '14:17:26.131805', 'Startzeit': '26.11470', u'Zeit udp2mqtt': u'12:17:26.114702', u'Topic Change': u'12:17:26.117887', u'Messwert': u"b'19'"}
+{'Endzeit': '26.14491', 'Log Zeit': '14:17:26.144912', 'Startzeit': '26.12722', u'Zeit udp2mqtt': u'12:17:26.127224', u'Topic Change': u'12:17:26.131136', u'Messwert': u"b'20'"}
+{'Endzeit': '26.15569', 'Log Zeit': '14:17:26.155699', 'Startzeit': '26.13980', u'Zeit udp2mqtt': u'12:17:26.139808', u'Topic Change': u'12:17:26.144311', u'Messwert': u"b'21'"}
+{'Endzeit': '26.16932', 'Log Zeit': '14:17:26.169327', 'Startzeit': '26.15217', u'Zeit udp2mqtt': u'12:17:26.152177', u'Topic Change': u'12:17:26.155271', u'Messwert': u"b'22'"}
+{'Endzeit': '26.18068', 'Log Zeit': '14:17:26.180687', 'Startzeit': '26.16473', u'Zeit udp2mqtt': u'12:17:26.164736', u'Topic Change': u'12:17:26.168804', u'Messwert': u"b'23'"}
+{'Endzeit': '26.19561', 'Log Zeit': '14:17:26.195613', 'Startzeit': '26.17721', u'Zeit udp2mqtt': u'12:17:26.177215', u'Topic Change': u'12:17:26.180321', u'Messwert': u"b'24'"}
+{'Endzeit': '26.20733', 'Log Zeit': '14:17:26.207335', 'Startzeit': '26.18971', u'Zeit udp2mqtt': u'12:17:26.189716', u'Topic Change': u'12:17:26.194847', u'Messwert': u"b'25'"}
+{'Endzeit': '26.22065', 'Log Zeit': '14:17:26.220654', 'Startzeit': '26.20229', u'Zeit udp2mqtt': u'12:17:26.202299', u'Topic Change': u'12:17:26.206817', u'Messwert': u"b'26'"}
+{'Endzeit': '26.23218', 'Log Zeit': '14:17:26.232184', 'Startzeit': '26.21463', u'Zeit udp2mqtt': u'12:17:26.214631', u'Topic Change': u'12:17:26.217660', u'Messwert': u"b'27'"}
+{'Endzeit': '26.24317', 'Log Zeit': '14:17:26.243171', 'Startzeit': '26.22785', u'Zeit udp2mqtt': u'12:17:26.227855', u'Topic Change': u'12:17:26.234546', u'Messwert': u"b'28'"}
+{'Endzeit': '26.25780', 'Log Zeit': '14:17:26.257808', 'Startzeit': '26.23971', u'Zeit udp2mqtt': u'12:17:26.239712', u'Topic Change': u'12:17:26.245096', u'Messwert': u"b'29'"}
+{'Endzeit': '26.26876', 'Log Zeit': '14:17:26.268767', 'Startzeit': '26.25219', u'Zeit udp2mqtt': u'12:17:26.252190', u'Topic Change': u'12:17:26.257737', u'Messwert': u"b'30'"}
+{'Endzeit': '26.28194', 'Log Zeit': '14:17:26.281946', 'Startzeit': '26.26469', u'Zeit udp2mqtt': u'12:17:26.264692', u'Topic Change': u'12:17:26.268712', u'Messwert': u"b'31'"}
+{'Endzeit': '26.29408', 'Log Zeit': '14:17:26.294082', 'Startzeit': '26.27714', u'Zeit udp2mqtt': u'12:17:26.277143', u'Topic Change': u'12:17:26.281551', u'Messwert': u"b'32'"}
+{'Endzeit': '26.30557', 'Log Zeit': '14:17:26.305579', 'Startzeit': '26.28983', u'Zeit udp2mqtt': u'12:17:26.289835', u'Topic Change': u'12:17:26.293950', u'Messwert': u"b'33'"}
+{'Endzeit': '26.32025', 'Log Zeit': '14:17:26.320255', 'Startzeit': '26.30224', u'Zeit udp2mqtt': u'12:17:26.302240', u'Topic Change': u'12:17:26.305404', u'Messwert': u"b'34'"}
+{'Endzeit': '26.33177', 'Log Zeit': '14:17:26.331774', 'Startzeit': '26.31476', u'Zeit udp2mqtt': u'12:17:26.314764', u'Topic Change': u'12:17:26.319871', u'Messwert': u"b'35'"}
+{'Endzeit': '26.34296', 'Log Zeit': '14:17:26.342961', 'Startzeit': '26.32734', u'Zeit udp2mqtt': u'12:17:26.327341', u'Topic Change': u'12:17:26.331344', u'Messwert': u"b'36'"}
+{'Endzeit': '26.35691', 'Log Zeit': '14:17:26.356914', 'Startzeit': '26.33973', u'Zeit udp2mqtt': u'12:17:26.339731', u'Topic Change': u'12:17:26.342617', u'Messwert': u"b'37'"}
+{'Endzeit': '26.36809', 'Log Zeit': '14:17:26.368096', 'Startzeit': '26.35253', u'Zeit udp2mqtt': u'12:17:26.352536', u'Topic Change': u'12:17:26.357035', u'Messwert': u"b'38'"}
+{'Endzeit': '26.38284', 'Log Zeit': '14:17:26.382843', 'Startzeit': '26.36489', u'Zeit udp2mqtt': u'12:17:26.364890', u'Topic Change': u'12:17:26.367801', u'Messwert': u"b'39'"}
+{'Endzeit': '26.39434', 'Log Zeit': '14:17:26.394343', 'Startzeit': '26.37743', u'Zeit udp2mqtt': u'12:17:26.377437', u'Topic Change': u'12:17:26.382218', u'Messwert': u"b'40'"}
+{'Endzeit': '26.40592', 'Log Zeit': '14:17:26.405926', 'Startzeit': '26.39019', u'Zeit udp2mqtt': u'12:17:26.390196', u'Topic Change': u'12:17:26.394208', u'Messwert': u"b'41'"}
+{'Endzeit': '26.41936', 'Log Zeit': '14:17:26.419366', 'Startzeit': '26.40257', u'Zeit udp2mqtt': u'12:17:26.402575', u'Topic Change': u'12:17:26.405615', u'Messwert': u"b'42'"}
+{'Endzeit': '26.43077', 'Log Zeit': '14:17:26.430775', 'Startzeit': '26.41521', u'Zeit udp2mqtt': u'12:17:26.415218', u'Topic Change': u'12:17:26.419261', u'Messwert': u"b'43'"}
+{'Endzeit': '26.44501', 'Log Zeit': '14:17:26.445017', 'Startzeit': '26.42768', u'Zeit udp2mqtt': u'12:17:26.427685', u'Topic Change': u'12:17:26.430468', u'Messwert': u"b'44'"}
+{'Endzeit': '26.45680', 'Log Zeit': '14:17:26.456801', 'Startzeit': '26.44088', u'Zeit udp2mqtt': u'12:17:26.440886', u'Topic Change': u'12:17:26.444669', u'Messwert': u"b'45'"}
+{'Endzeit': '26.47346', 'Log Zeit': '14:17:26.473463', 'Startzeit': '26.45342', u'Zeit udp2mqtt': u'12:17:26.453424', u'Topic Change': u'12:17:26.456476', u'Messwert': u"b'46'"}
+{'Endzeit': '26.48225', 'Log Zeit': '14:17:26.482252', 'Startzeit': '26.46841', u'Zeit udp2mqtt': u'12:17:26.468412', u'Topic Change': u'12:17:26.473463', u'Messwert': u"b'47'"}
+{'Endzeit': '26.49396', 'Log Zeit': '14:17:26.493962', 'Startzeit': '26.47870', u'Zeit udp2mqtt': u'12:17:26.478708', u'Topic Change': u'12:17:26.482173', u'Messwert': u"b'48'"}
+{'Endzeit': '26.50782', 'Log Zeit': '14:17:26.507821', 'Startzeit': '26.49103', u'Zeit udp2mqtt': u'12:17:26.491039', u'Topic Change': u'12:17:26.495029', u'Messwert': u"b'49'"}
+{'Endzeit': '26.51960', 'Log Zeit': '14:17:26.519607', 'Startzeit': '26.50392', u'Zeit udp2mqtt': u'12:17:26.503923', u'Topic Change': u'12:17:26.507420', u'Messwert': u"b'50'"}
+{'Endzeit': '26.53233', 'Log Zeit': '14:17:26.532334', 'Startzeit': '26.51645', u'Zeit udp2mqtt': u'12:17:26.516458', u'Topic Change': u'12:17:26.519149', u'Messwert': u"b'51'"}
+{'Endzeit': '26.54610', 'Log Zeit': '14:17:26.546100', 'Startzeit': '26.52894', u'Zeit udp2mqtt': u'12:17:26.528944', u'Topic Change': u'12:17:26.531849', u'Messwert': u"b'52'"}
+{'Endzeit': '26.55760', 'Log Zeit': '14:17:26.557603', 'Startzeit': '26.54148', u'Zeit udp2mqtt': u'12:17:26.541489', u'Topic Change': u'12:17:26.545577', u'Messwert': u"b'53'"}
+{'Endzeit': '26.57421', 'Log Zeit': '14:17:26.574210', 'Startzeit': '26.55385', u'Zeit udp2mqtt': u'12:17:26.553854', u'Topic Change': u'12:17:26.559861', u'Messwert': u"b'54'"}
+{'Endzeit': '26.58509', 'Log Zeit': '14:17:26.585099', 'Startzeit': '26.56664', u'Zeit udp2mqtt': u'12:17:26.566646', u'Topic Change': u'12:17:26.570870', u'Messwert': u"b'55'"}
+{'Endzeit': '26.60006', 'Log Zeit': '14:17:26.600068', 'Startzeit': '26.57907', u'Zeit udp2mqtt': u'12:17:26.579075', u'Topic Change': u'12:17:26.582483', u'Messwert': u"b'56'"}
+{'Endzeit': '26.60807', 'Log Zeit': '14:17:26.608073', 'Startzeit': '26.59153', u'Zeit udp2mqtt': u'12:17:26.591533', u'Topic Change': u'12:17:26.596977', u'Messwert': u"b'57'"}
+{'Endzeit': '26.61983', 'Log Zeit': '14:17:26.619838', 'Startzeit': '26.60413', u'Zeit udp2mqtt': u'12:17:26.604133', u'Topic Change': u'12:17:26.610067', u'Messwert': u"b'58'"}
+{'Endzeit': '26.63333', 'Log Zeit': '14:17:26.633335', 'Startzeit': '26.61666', u'Zeit udp2mqtt': u'12:17:26.616663', u'Topic Change': u'12:17:26.619691', u'Messwert': u"b'59'"}
+{'Endzeit': '26.64495', 'Log Zeit': '14:17:26.644959', 'Startzeit': '26.62942', u'Zeit udp2mqtt': u'12:17:26.629420', u'Topic Change': u'12:17:26.633013', u'Messwert': u"b'60'"}
+{'Endzeit': '26.65914', 'Log Zeit': '14:17:26.659143', 'Startzeit': '26.64184', u'Zeit udp2mqtt': u'12:17:26.641845', u'Topic Change': u'12:17:26.644602', u'Messwert': u"b'61'"}
+{'Endzeit': '26.67044', 'Log Zeit': '14:17:26.670445', 'Startzeit': '26.65489', u'Zeit udp2mqtt': u'12:17:26.654896', u'Topic Change': u'12:17:26.658623', u'Messwert': u"b'62'"}
+{'Endzeit': '26.68761', 'Log Zeit': '14:17:26.687617', 'Startzeit': '26.66737', u'Zeit udp2mqtt': u'12:17:26.667376', u'Topic Change': u'12:17:26.670030', u'Messwert': u"b'63'"}
+{'Endzeit': '26.69667', 'Log Zeit': '14:17:26.696674', 'Startzeit': '26.68228', u'Zeit udp2mqtt': u'12:17:26.682282', u'Topic Change': u'12:17:26.687084', u'Messwert': u"b'64'"}
+{'Endzeit': '26.71072', 'Log Zeit': '14:17:26.710727', 'Startzeit': '26.69244', u'Zeit udp2mqtt': u'12:17:26.692444', u'Topic Change': u'12:17:26.696011', u'Messwert': u"b'65'"}
+{'Endzeit': '26.72443', 'Log Zeit': '14:17:26.724432', 'Startzeit': '26.70766', u'Zeit udp2mqtt': u'12:17:26.707660', u'Topic Change': u'12:17:26.710288', u'Messwert': u"b'66'"}
+{'Endzeit': '26.73871', 'Log Zeit': '14:17:26.738711', 'Startzeit': '26.72033', u'Zeit udp2mqtt': u'12:17:26.720337', u'Topic Change': u'12:17:26.723950', u'Messwert': u"b'67'"}
+{'Endzeit': '26.75453', 'Log Zeit': '14:17:26.754530', 'Startzeit': '26.73552', u'Zeit udp2mqtt': u'12:17:26.735522', u'Topic Change': u'12:17:26.738396', u'Messwert': u"b'68'"}
+{'Endzeit': '26.76883', 'Log Zeit': '14:17:26.768830', 'Startzeit': '26.75041', u'Zeit udp2mqtt': u'12:17:26.750416', u'Topic Change': u'12:17:26.754154', u'Messwert': u"b'69'"}
+{'Endzeit': '26.78431', 'Log Zeit': '14:17:26.784311', 'Startzeit': '26.76561', u'Zeit udp2mqtt': u'12:17:26.765617', u'Topic Change': u'12:17:26.768483', u'Messwert': u"b'70'"}
+{'Endzeit': '26.79871', 'Log Zeit': '14:17:26.798717', 'Startzeit': '26.78046', u'Zeit udp2mqtt': u'12:17:26.780468', u'Topic Change': u'12:17:26.785940', u'Messwert': u"b'71'"}
+{'Endzeit': '26.81425', 'Log Zeit': '14:17:26.814259', 'Startzeit': '26.79540', u'Zeit udp2mqtt': u'12:17:26.795401', u'Topic Change': u'12:17:26.798436', u'Messwert': u"b'72'"}
+{'Endzeit': '26.82877', 'Log Zeit': '14:17:26.828770', 'Startzeit': '26.81041', u'Zeit udp2mqtt': u'12:17:26.810416', u'Topic Change': u'12:17:26.813924', u'Messwert': u"b'73'"}
+{'Endzeit': '26.84487', 'Log Zeit': '14:17:26.844874', 'Startzeit': '26.82557', u'Zeit udp2mqtt': u'12:17:26.825576', u'Topic Change': u'12:17:26.828422', u'Messwert': u"b'74'"}
+{'Endzeit': '26.85913', 'Log Zeit': '14:17:26.859132', 'Startzeit': '26.84061', u'Zeit udp2mqtt': u'12:17:26.840617', u'Topic Change': u'12:17:26.845932', u'Messwert': u"b'75'"}
+{'Endzeit': '26.87513', 'Log Zeit': '14:17:26.875132', 'Startzeit': '26.85592', u'Zeit udp2mqtt': u'12:17:26.855925', u'Topic Change': u'12:17:26.858756', u'Messwert': u"b'76'"}
+{'Endzeit': '26.88953', 'Log Zeit': '14:17:26.889531', 'Startzeit': '26.87101', u'Zeit udp2mqtt': u'12:17:26.871018', u'Topic Change': u'12:17:26.874645', u'Messwert': u"b'77'"}
+{'Endzeit': '26.90471', 'Log Zeit': '14:17:26.904719', 'Startzeit': '26.88626', u'Zeit udp2mqtt': u'12:17:26.886264', u'Topic Change': u'12:17:26.889198', u'Messwert': u"b'78'"}
+{'Endzeit': '26.91620', 'Log Zeit': '14:17:26.916205', 'Startzeit': '26.90032', u'Zeit udp2mqtt': u'12:17:26.900329', u'Topic Change': u'12:17:26.904349', u'Messwert': u"b'79'"}
+{'Endzeit': '26.92925', 'Log Zeit': '14:17:26.929252', 'Startzeit': '26.91320', u'Zeit udp2mqtt': u'12:17:26.913209', u'Topic Change': u'12:17:26.915879', u'Messwert': u"b'80'"}
+{'Endzeit': '26.94305', 'Log Zeit': '14:17:26.943058', 'Startzeit': '26.92561', u'Zeit udp2mqtt': u'12:17:26.925615', u'Topic Change': u'12:17:26.928977', u'Messwert': u"b'81'"}
+{'Endzeit': '26.95393', 'Log Zeit': '14:17:26.953931', 'Startzeit': '26.93863', u'Zeit udp2mqtt': u'12:17:26.938635', u'Topic Change': u'12:17:26.945768', u'Messwert': u"b'82'"}
+{'Endzeit': '26.96796', 'Log Zeit': '14:17:26.967963', 'Startzeit': '26.95070', u'Zeit udp2mqtt': u'12:17:26.950701', u'Topic Change': u'12:17:26.953571', u'Messwert': u"b'83'"}
+{'Endzeit': '26.97965', 'Log Zeit': '14:17:26.979650', 'Startzeit': '26.96372', u'Zeit udp2mqtt': u'12:17:26.963727', u'Topic Change': u'12:17:26.967554', u'Messwert': u"b'84'"}
+{'Endzeit': '26.99289', 'Log Zeit': '14:17:26.992899', 'Startzeit': '26.97638', u'Zeit udp2mqtt': u'12:17:26.976383', u'Topic Change': u'12:17:26.979333', u'Messwert': u"b'85'"}
+{'Endzeit': '27.00582', 'Log Zeit': '14:17:27.005829', 'Startzeit': '26.98893', u'Zeit udp2mqtt': u'12:17:26.988930', u'Topic Change': u'12:17:26.992484', u'Messwert': u"b'86'"}
+{'Endzeit': '27.01706', 'Log Zeit': '14:17:27.017062', 'Startzeit': '27.00151', u'Zeit udp2mqtt': u'12:17:27.001519', u'Topic Change': u'12:17:27.005471', u'Messwert': u"b'87'"}

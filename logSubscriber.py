@@ -30,12 +30,27 @@ print ('Subscriber_Service IP: ', service_ip)
 
 logfile = open('Log.txt', 'w')  #logfile erstellen
 
+loglist = list()
+
+#funktion um die aufgenommenen Zeiten wiederbenutzbar zu formatieren
+def zeitformat (zeit):
+    zeitList = list()
+    for n in range(6, 14):
+        zeitList.append(zeit[n])
+    zeitString = ''.join(str(i) for i in zeitList)
+    return zeitString
+
 #funktion zum auslesen des mqtt topics
 def on_message(client, userdata, msg):
+    global loglist
     msg_in = json.loads(msg.payload) #json daten entpacken
     timeStamp = str(datetime.now().time()) #zeitstempel einfuegen
     msg_in.update({'Log Zeit' : timeStamp})
-    logfile.write(str(msg_in) + '\n')
+    startZeit = zeitformat(msg_in['Zeit udp2mqtt'])
+    msg_in.update({'Startzeit' : startZeit})
+    endZeit = zeitformat(timeStamp)
+    msg_in.update({'Endzeit' : endZeit})
+    loglist.append(str(msg_in))
     print(msg_in)
     
 def main():
@@ -44,7 +59,11 @@ def main():
         client.loop_forever()
     # stoerungsmeldung 
     except:
+        global loglist
+        for i in range(len(loglist)):
+            logfile.write(loglist[i] + '\n')
         
+        print('Logfile geschrieben')
         print("Subscriber Service down")
 
 if __name__=='__main__':
