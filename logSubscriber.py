@@ -20,6 +20,7 @@ client.connect(broker_adress)
 
 #Topic "xx" wird abonniert mit einem Quality of Service qos
 client.subscribe("Data-Log", 0)
+#client.subscribe("UDP-Sensor/Filter", 0)
 print('MQTT Client up')
 
 #Service Infos
@@ -45,6 +46,7 @@ def on_message(client, userdata, msg):
     global loglist
     msg_in = json.loads(msg.payload) #json daten entpacken
     timeStamp = str(datetime.now().time()) #zeitstempel einfuegen
+    timeStamp = zeitformat(timeStamp)
     msg_in.update({'Log Zeit' : timeStamp})
     loglist.append(str(msg_in))
     print(msg_in)

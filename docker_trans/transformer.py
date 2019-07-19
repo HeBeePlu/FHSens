@@ -18,7 +18,7 @@ client.connect(broker_adress)
 
 
 #Topic "udp-sensor" wird abonniert mit einem Quality of Service qos
-client.subscribe("UDP-Sensor", 0)
+client.subscribe("UDP-Sensor/#", 0)
 print('MQTT Client up')
 
 #Infos dieses Services
